@@ -95,7 +95,13 @@ public class Topic_06_ConditionStatement_Ifelse_Exercises {
 		} else {
 			System.out.println("Nhập tháng đúng");
 		}
-		
+		input.close();
+		input1.close();
+		input2.close();
+		input3.close();
+		input4.close();
+		input5.close();
+		input6.close();
 	}
-
+	
 }
