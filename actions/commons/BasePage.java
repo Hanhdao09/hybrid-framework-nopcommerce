@@ -100,7 +100,7 @@ public class BasePage {
 		}
 	}
 
-	public By getByXpath(String xpathLocator) {
+	private By getByXpath(String xpathLocator) {
 
 		return By.xpath(xpathLocator);
 	}
@@ -110,7 +110,7 @@ public class BasePage {
 
 	}
 
-	public List<WebElement> getListWebElement(WebDriver driver, String xpathLocator) {
+	private List<WebElement> getListWebElement(WebDriver driver, String xpathLocator) {
 		return driver.findElements(By.xpath(xpathLocator));
 
 	}
@@ -134,7 +134,7 @@ public class BasePage {
 
 	public void selectItemInDefauldDropdown(WebDriver driver, String xpathLocator, String textItem) {
 		Select select = new Select(getWebElement(driver, xpathLocator));
-		select.selectByValue(textItem);
+		select.selectByVisibleText(textItem);
 	}
 
 	public String getFirstSelectedItemDefauldDropdown(WebDriver driver, String xpathLocator) {
