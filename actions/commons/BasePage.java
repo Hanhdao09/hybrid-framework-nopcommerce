@@ -18,6 +18,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class BasePage {
 	// chứa các hàm dùng chung của Page Object
 	// bổ trợ cho nguyên Package pageObjects
+	public static BasePage getBasePageObject() {
+		return new BasePage();
+	}
+
 	public void openPageUrl(WebDriver driver, String pageUrl) {
 		driver.get(pageUrl);
 	}
