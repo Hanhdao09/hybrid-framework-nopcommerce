@@ -349,8 +349,13 @@ public class BasePage {
 		explicitWait.until(ExpectedConditions.invisibilityOfAllElements(getListWebElement(driver, xpathlocator)));
 	}
 
-	public void waitForAllElementClickable(WebDriver driver, String xpathlocator) {
+	public void waitForElementClickable(WebDriver driver, String xpathlocator) {
 		WebDriverWait explicitWait = new WebDriverWait(driver, 30);
 		explicitWait.until(ExpectedConditions.elementToBeClickable(getByXpath(xpathlocator)));
+	}
+
+	public void waitForAllElementClickable(WebDriver driver, String string) {
+		// TODO Auto-generated method stub
+
 	}
 }
