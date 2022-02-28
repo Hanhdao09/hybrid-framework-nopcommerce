@@ -5,9 +5,12 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import pageObjects.HomePageObject;
@@ -20,11 +23,22 @@ public class Level_03_Page_Object_I_Register {
 	private RegisterPageObject registerPage;
 	private String firstName, lastName, email, password;
 
+	@Parameters("browser")
 	@BeforeClass
-	public void beforeClass() {
-		System.setProperty("webdriver.chrome.driver", projectPath + "\\browserDrivers\\chromedriver.exe");
-		System.out.println(projectPath);
-		driver = new ChromeDriver();
+	public void beforeClass(String browserName) {
+		if (browserName.equals("firefox")) {
+			System.setProperty("webdriver.gecko.driver", projectPath + "\\browserDrivers\\geckodriver.exe");
+			driver = new FirefoxDriver();
+		} else if (browserName.equals("chrome")) {
+			System.setProperty("webdriver.chrome.driver", projectPath + "\\browserDrivers\\chromedriver.exe");
+			driver = new ChromeDriver();
+		} else if (browserName.equals("edge")) {
+			System.setProperty("webdriver.edge.driver", projectPath + "\\browserDrivers\\msedgedriver.exe");
+			driver = new EdgeDriver();
+		} else {
+			throw new RuntimeException("Browser is invalid");
+		}
+
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		driver.get("https://demo.nopcommerce.com/");

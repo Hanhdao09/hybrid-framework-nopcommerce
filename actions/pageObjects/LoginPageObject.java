@@ -3,6 +3,7 @@ package pageObjects;
 import org.openqa.selenium.WebDriver;
 
 import commons.BasePage;
+import pageUIs.HomePageUI;
 import pageUIs.LoginPageUI;
 
 public class LoginPageObject extends BasePage {
@@ -39,8 +40,8 @@ public class LoginPageObject extends BasePage {
 	}
 
 	public boolean isMyAccountLinkDisplayed() {
-		waitForElementVisible(driver, LoginPageUI.MYACCOUNT_LINK);
-		return isElementDisplayed(driver, LoginPageUI.MYACCOUNT_LINK);
+		waitForElementVisible(driver, HomePageUI.MYACCOUNT_LINK);
+		return isElementDisplayed(driver, HomePageUI.MYACCOUNT_LINK);
 	}
 
 	public boolean isLogoutLinkDisplayed() {
