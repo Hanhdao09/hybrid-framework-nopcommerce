@@ -65,6 +65,7 @@ public class Level_03_Page_Object_II_Login {
 		registerPage.clickToRegisterButton();
 
 		registerPage.clickToLogoutLink();
+		homePage = new HomePageObject(driver);
 	}
 
 	@Test

@@ -2,6 +2,7 @@ package pageObjectFactory;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -15,45 +16,59 @@ public class RegisterPageObject extends BasePageFactory {
 		PageFactory.initElements(driver, this);
 	}
 
+	@CacheLookup
 	@FindBy(xpath = "//input[@id='FirstName']")
 	private WebElement firstNameTexbox;
 
+	@CacheLookup
 	@FindBy(xpath = "//input[@id='LastName']")
 	private WebElement lastNameTexbox;
 
+	@CacheLookup
 	@FindBy(xpath = "//input[@id='Email']")
 	private WebElement emailTexbox;
 
+	@CacheLookup
 	@FindBy(xpath = "//input[@id='Password']")
 	private WebElement passwordTexbox;
 
+	@CacheLookup
 	@FindBy(xpath = "//input[@id='ConfirmPassword']")
 	private WebElement confirmPasswordTexbox;
 
+	@CacheLookup
 	@FindBy(xpath = "//button[@id='register-button']")
 	private WebElement registerButton;
 
+	@CacheLookup
 	@FindBy(xpath = "//span[@id='FirstName-error']")
 	private WebElement errorMessageAtFirstNameTextbox;
 
+	@CacheLookup
 	@FindBy(xpath = "//span[@id='LastName-error']")
 	private WebElement errorMessageAtLastNameTextbox;
 
+	@CacheLookup
 	@FindBy(xpath = "//span[@id='Email-error']")
 	private WebElement errorMessageAtEmailTextbox;
 
+	@CacheLookup
 	@FindBy(xpath = "//span[@id='Password-error']")
 	private WebElement errorMessageAtPasswordTextbox;
 
+	@CacheLookup
 	@FindBy(xpath = "//span[@id='ConfirmPassword-error']")
 	private WebElement errorMessageAtConfirmPasswordTextbox;
 
+	@CacheLookup
 	@FindBy(xpath = "//div[contains(@class, 'message-error')]//li")
 	private WebElement errorMessageForExitEmail;
 
+	@CacheLookup
 	@FindBy(xpath = "//div[@class='result']")
 	private WebElement successfulMessage;
 
+	@CacheLookup
 	@FindBy(xpath = "//a[@class='ico-logout']")
 	private WebElement logoutButton;
 

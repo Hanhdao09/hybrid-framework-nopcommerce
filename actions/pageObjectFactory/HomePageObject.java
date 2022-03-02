@@ -2,6 +2,7 @@ package pageObjectFactory;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -15,12 +16,15 @@ public class HomePageObject extends BasePageFactory {
 		PageFactory.initElements(driver, this);
 	}
 
+	@CacheLookup
 	@FindBy(xpath = "//a[@class='ico-register']")
 	private WebElement registerLink;
 
+	@CacheLookup
 	@FindBy(xpath = "//a[@class='ico-login']")
 	private WebElement loginLink;
 
+	@CacheLookup
 	@FindBy(xpath = "//a[@class='ico-account']")
 	private WebElement myAccountLink;
 
