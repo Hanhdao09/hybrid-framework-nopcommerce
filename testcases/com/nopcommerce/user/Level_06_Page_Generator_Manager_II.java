@@ -7,12 +7,11 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import commons.BaseTest;
-import pageObjects.HomePageObject;
-import pageObjects.PageGeneratorManager;
-import pageObjects.RegisterPageObject;
+import commons.BaseTest_Nopcommerce;
+import pageObjects.nopcommerce.HomePageObject;
+import pageObjects.nopcommerce.RegisterPageObject;
 
-public class Level_06_Page_Generator_Manager_II extends BaseTest {
+public class Level_06_Page_Generator_Manager_II extends BaseTest_Nopcommerce {
 	private WebDriver driver;
 	private HomePageObject homePage;
 	private RegisterPageObject registerPage;
@@ -22,7 +21,7 @@ public class Level_06_Page_Generator_Manager_II extends BaseTest {
 	@BeforeClass
 	public void beforeClass(String browserName) {
 		driver = getBrowserDriver(browserName);
-		homePage = PageGeneratorManager.getHomePage(driver);
+		homePage = new HomePageObject(driver);
 
 		firstName = "Hanh";
 		lastName = "Dao Thi";

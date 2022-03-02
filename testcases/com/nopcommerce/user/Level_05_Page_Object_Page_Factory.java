@@ -9,13 +9,13 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import commons.BaseTest;
+import commons.BaseTest_Nopcommerce;
 
-public class Level_05_Page_Object_Page_Factory extends BaseTest {
+public class Level_05_Page_Object_Page_Factory extends BaseTest_Nopcommerce {
 	private WebDriver driver;
-	private pageObjectFactory.HomePageObject homePage;
-	private pageObjectFactory.RegisterPageObject registerPage;
-	private pageObjectFactory.LoginPageObject loginPage;
+	private pageObjectFactory.nopcommerce.HomePageObject homePage;
+	private pageObjectFactory.nopcommerce.RegisterPageObject registerPage;
+	private pageObjectFactory.nopcommerce.LoginPageObject loginPage;
 	private String firstName, lastName, foundEmail, password, invalidEmail, notFoundEmail, incorrectPassword;
 
 	@Parameters("browser")
@@ -31,10 +31,10 @@ public class Level_05_Page_Object_Page_Factory extends BaseTest {
 		password = "12345678@Abc";
 		incorrectPassword = "12345678";
 
-		homePage = new pageObjectFactory.HomePageObject(driver);
+		homePage = new pageObjectFactory.nopcommerce.HomePageObject(driver);
 
 		homePage.clickToRegisterLink();
-		registerPage = new pageObjectFactory.RegisterPageObject(driver);
+		registerPage = new pageObjectFactory.nopcommerce.RegisterPageObject(driver);
 		registerPage.inputToFirstNameTextbox(firstName);
 		registerPage.inputToLastNameTextbox(lastName);
 		registerPage.inputToEmailTextbox(foundEmail);
@@ -50,7 +50,7 @@ public class Level_05_Page_Object_Page_Factory extends BaseTest {
 	public void Login_01_Empty_Data() {
 		System.out.println("Login_01_Step_01_Click to login link");
 		homePage.clickToLoginLink();
-		loginPage = new pageObjectFactory.LoginPageObject(driver);
+		loginPage = new pageObjectFactory.nopcommerce.LoginPageObject(driver);
 
 		System.out.println("Login_01_Step_02_Click to login button");
 		loginPage.clickToLoginButton();
@@ -62,7 +62,7 @@ public class Level_05_Page_Object_Page_Factory extends BaseTest {
 	public void Login_02_Invalid_Email() {
 		System.out.println("Login_02_Step_01_Click to login link");
 		homePage.clickToLoginLink();
-		loginPage = new pageObjectFactory.LoginPageObject(driver);
+		loginPage = new pageObjectFactory.nopcommerce.LoginPageObject(driver);
 
 		System.out.println("Login_02_Step_02_Input to email textbox");
 		loginPage.InputToEmailTextbox(invalidEmail);
@@ -77,7 +77,7 @@ public class Level_05_Page_Object_Page_Factory extends BaseTest {
 	public void Login_03_NotFoundEmail() {
 		System.out.println("Login_03_Step_01_Click to login link");
 		homePage.clickToLoginLink();
-		loginPage = new pageObjectFactory.LoginPageObject(driver);
+		loginPage = new pageObjectFactory.nopcommerce.LoginPageObject(driver);
 
 		System.out.println("Login_03_Step_02_Input to email textbox");
 		loginPage.InputToEmailTextbox(notFoundEmail);
@@ -93,7 +93,7 @@ public class Level_05_Page_Object_Page_Factory extends BaseTest {
 	public void Login_04_FoundEmail_IncorrectPassword() {
 		System.out.println("Login_04_Step_01_Click to login link");
 		homePage.clickToLoginLink();
-		loginPage = new pageObjectFactory.LoginPageObject(driver);
+		loginPage = new pageObjectFactory.nopcommerce.LoginPageObject(driver);
 
 		System.out.println("Login_04_Step_02_Input to email textbox");
 		loginPage.InputToEmailTextbox(foundEmail);
@@ -112,7 +112,7 @@ public class Level_05_Page_Object_Page_Factory extends BaseTest {
 	public void Login_05_FoundEmail_CorrectPassword() {
 		System.out.println("Login_05_Step_01_Click to login link");
 		homePage.clickToLoginLink();
-		loginPage = new pageObjectFactory.LoginPageObject(driver);
+		loginPage = new pageObjectFactory.nopcommerce.LoginPageObject(driver);
 
 		System.out.println("Login_05_Step_02_Input to email textbox");
 		loginPage.InputToEmailTextbox(foundEmail);

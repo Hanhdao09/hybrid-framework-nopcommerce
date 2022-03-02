@@ -9,11 +9,11 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import commons.BaseTest;
-import pageObjects.HomePageObject;
-import pageObjects.RegisterPageObject;
+import commons.BaseTest_Nopcommerce;
+import pageObjects.nopcommerce.HomePageObject;
+import pageObjects.nopcommerce.RegisterPageObject;
 
-public class Level_06_Page_Generator_Manager_I extends BaseTest {
+public class Level_06_Page_Generator_Manager_I extends BaseTest_Nopcommerce {
 	private WebDriver driver;
 	private HomePageObject homePage;
 	private RegisterPageObject registerPage;

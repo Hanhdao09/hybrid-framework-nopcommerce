@@ -13,9 +13,9 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import pageObjects.HomePageObject;
-import pageObjects.LoginPageObject;
-import pageObjects.RegisterPageObject;
+import pageObjects.nopcommerce.HomePageObject;
+import pageObjects.nopcommerce.LoginPageObject;
+import pageObjects.nopcommerce.RegisterPageObject;
 
 public class Level_03_Page_Object_II_Login {
 	private WebDriver driver;

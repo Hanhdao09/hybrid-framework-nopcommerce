@@ -15,7 +15,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 //chứa các hàm dùng chung cho các testcase
 //bổ trợ cho nguyên sourcesfolder testcases
-public class BaseTest {
+public class BaseTest_Nopcommerce {
 	protected WebDriver driver;
 	protected String projectPath = System.getProperty("user.dir");
 

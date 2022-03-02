@@ -13,8 +13,8 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import pageObjects.HomePageObject;
-import pageObjects.RegisterPageObject;
+import pageObjects.nopcommerce.HomePageObject;
+import pageObjects.nopcommerce.RegisterPageObject;
 
 public class Level_03_Page_Object_I_Register {
 	private WebDriver driver;

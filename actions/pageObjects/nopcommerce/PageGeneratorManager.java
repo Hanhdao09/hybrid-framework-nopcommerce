@@ -1,4 +1,4 @@
-package pageObjects;
+package pageObjects.nopcommerce;
 
 import org.openqa.selenium.WebDriver;
 
@@ -14,6 +14,10 @@ public class PageGeneratorManager {
 
 	public static RegisterPageObject getRegisterPage(WebDriver driver) {
 		return new RegisterPageObject(driver);
+	}
+
+	public static CustomerInfoPageObject getCustomInfoPage(WebDriver driver) {
+		return new CustomerInfoPageObject(driver);
 	}
 
 }
