@@ -15,6 +15,13 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import pageObjects.nopcommerce.AddressPageObject;
+import pageObjects.nopcommerce.CustomerInfoPageObject;
+import pageObjects.nopcommerce.MyProductReviewPageObject;
+import pageObjects.nopcommerce.PageGeneratorManager;
+import pageObjects.nopcommerce.RewardPointPageObject;
+import pageUIs.nopcommerce.BasePageUI;
+
 public class BasePage {
 	// chứa các hàm dùng chung của Page Object
 	// bổ trợ cho nguyên Package pageObjects
@@ -358,4 +365,29 @@ public class BasePage {
 		// TODO Auto-generated method stub
 
 	}
+
+	public AddressPageObject openAddressLinkMyAccount(WebDriver driver) {
+		waitForElementVisible(driver, BasePageUI.ADDRESS_LINK);
+		clickToElement(driver, BasePageUI.ADDRESS_LINK);
+		return PageGeneratorManager.getAddressPage(driver);
+	}
+
+	public MyProductReviewPageObject openMyproducReviewLinkMyAccount(WebDriver driver) {
+		waitForElementVisible(driver, BasePageUI.MYPRODUCTREVIEW_LINK);
+		clickToElement(driver, BasePageUI.MYPRODUCTREVIEW_LINK);
+		return PageGeneratorManager.getMyproductReviewPage(driver);
+	}
+
+	public RewardPointPageObject openRewardPointLinkMyAccount(WebDriver driver) {
+		waitForElementVisible(driver, BasePageUI.REWARDPOINT_LINK);
+		clickToElement(driver, BasePageUI.REWARDPOINT_LINK);
+		return PageGeneratorManager.getRewardPointPage(driver);
+	}
+
+	public CustomerInfoPageObject openCustomerInfoLinkMyAccount(WebDriver driver) {
+		waitForElementVisible(driver, BasePageUI.CUSTOMERINFO_LINK);
+		clickToElement(driver, BasePageUI.CUSTOMERINFO_LINK);
+		return PageGeneratorManager.getCustomerInfoPage(driver);
+	}
+
 }

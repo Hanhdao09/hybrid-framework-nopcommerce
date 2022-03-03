@@ -48,7 +48,7 @@ public class Level_06_Page_Generator_Manager_III_Register_Login extends BaseTest
 	}
 
 	@Test
-	public void User_01_LoginToSystem() {
+	public void User_02_LoginToSystem() {
 		loginPage = homePage.clickToMyAccountLink();
 		loginPage.inputToEmailTextbox(email);
 		loginPage.inputToPasswordTextbox(password);

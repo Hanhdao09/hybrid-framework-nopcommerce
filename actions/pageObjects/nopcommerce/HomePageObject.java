@@ -34,7 +34,7 @@ public class HomePageObject extends BasePage {
 	public CustomerInfoPageObject clickToMyAccountLink() {
 		waitForElementVisible(driver, HomePageUI.MYACCOUNT_LINK);
 		clickToElement(driver, HomePageUI.MYACCOUNT_LINK);
-		return PageGeneratorManager.getCustomInfoPage(driver);
+		return PageGeneratorManager.getCustomerInfoPage(driver);
 	}
 
 }
