@@ -10,13 +10,13 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import commons.BaseTest_Nopcommerce;
-import pageObjects.nopcommerce.HomePageObject;
-import pageObjects.nopcommerce.RegisterPageObject;
+import pageObjects.nopcommerce.user.UserHomePageObject;
+import pageObjects.nopcommerce.user.UserRegisterPageObject;
 
 public class Level_04_Multiple_Browser extends BaseTest_Nopcommerce {
 	private WebDriver driver;
-	private HomePageObject homePage;
-	private RegisterPageObject registerPage;
+	private UserHomePageObject homePage;
+	private UserRegisterPageObject registerPage;
 	private String firstName, lastName, email, password;
 
 	@Parameters("browser")
@@ -24,7 +24,7 @@ public class Level_04_Multiple_Browser extends BaseTest_Nopcommerce {
 	public void beforeClass(String browserName) {
 		System.out.println("Run on" + browserName);
 		driver = getBrowserDriver(browserName);
-		homePage = new HomePageObject(driver);
+		homePage = new UserHomePageObject(driver);
 		firstName = "Hanh";
 		lastName = "Dao Thi";
 		email = "afc" + getRandomemailNumber() + "@gmail.com";
@@ -36,7 +36,7 @@ public class Level_04_Multiple_Browser extends BaseTest_Nopcommerce {
 		System.out.println("Register_01_Step_01_Click to Register Link");
 		homePage.clickToRegisterLink();
 
-		registerPage = new RegisterPageObject(driver);
+		registerPage = new UserRegisterPageObject(driver);
 		System.out.println("Register_01_Step_02_Click to Register Button");
 		registerPage.clickToRegisterButton();
 
@@ -79,7 +79,7 @@ public class Level_04_Multiple_Browser extends BaseTest_Nopcommerce {
 		System.out.println("Register_03_Step_03_Click to Register Button");
 		registerPage.clickToRegisterButton();
 		Assert.assertEquals(registerPage.getRegisterSuccessMessage(), "Your registration completed");
-		registerPage.clickToLogoutLink();
+		registerPage.clickToLogoutLinkAtUserPage(driver);
 
 	}
 

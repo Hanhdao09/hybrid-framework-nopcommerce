@@ -8,18 +8,18 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import commons.BaseTest_Nopcommerce;
-import pageObjects.nopcommerce.CustomerInfoPageObject;
-import pageObjects.nopcommerce.HomePageObject;
-import pageObjects.nopcommerce.LoginPageObject;
-import pageObjects.nopcommerce.PageGeneratorManager;
-import pageObjects.nopcommerce.RegisterPageObject;
+import commons.PageGeneratorManager;
+import pageObjects.nopcommerce.user.UserCustomerInfoPageObject;
+import pageObjects.nopcommerce.user.UserHomePageObject;
+import pageObjects.nopcommerce.user.UserLoginPageObject;
+import pageObjects.nopcommerce.user.UserRegisterPageObject;
 
 public class Level_06_Page_Generator_Manager_III_Login extends BaseTest_Nopcommerce {
 	private WebDriver driver;
-	private HomePageObject homePage;
-	private RegisterPageObject registerPage;
-	private LoginPageObject loginPage;
-	private CustomerInfoPageObject customInfoPage;
+	private UserHomePageObject homePage;
+	private UserRegisterPageObject registerPage;
+	private UserLoginPageObject loginPage;
+	private UserCustomerInfoPageObject customInfoPage;
 	private String firstName, lastName, foundEmail, password, invalidEmail, notFoundEmail, incorrectPassword;
 
 	@Parameters("browser")
@@ -35,7 +35,7 @@ public class Level_06_Page_Generator_Manager_III_Login extends BaseTest_Nopcomme
 		password = "12345678@Abc";
 		incorrectPassword = "12345678";
 
-		homePage = PageGeneratorManager.getHomePage(driver);
+		homePage = PageGeneratorManager.getUserHomePage(driver);
 		registerPage = homePage.clickToRegisterLink();
 		registerPage.inputToFirstNameTextbox(firstName);
 		registerPage.inputToLastNameTextbox(lastName);
@@ -45,7 +45,7 @@ public class Level_06_Page_Generator_Manager_III_Login extends BaseTest_Nopcomme
 
 		registerPage.clickToRegisterButton();
 
-		homePage = registerPage.clickToLogoutLink();
+		homePage = registerPage.clickToLogoutLinkAtUserPage(driver);
 	}
 
 	@Test

@@ -13,14 +13,14 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import pageObjects.nopcommerce.HomePageObject;
-import pageObjects.nopcommerce.RegisterPageObject;
+import pageObjects.nopcommerce.user.UserHomePageObject;
+import pageObjects.nopcommerce.user.UserRegisterPageObject;
 
 public class Level_03_Page_Object_I_Register {
 	private WebDriver driver;
 	private String projectPath = System.getProperty("user.dir");
-	private HomePageObject homePage;
-	private RegisterPageObject registerPage;
+	private UserHomePageObject homePage;
+	private UserRegisterPageObject registerPage;
 	private String firstName, lastName, email, password;
 
 	@Parameters("browser")
@@ -42,7 +42,7 @@ public class Level_03_Page_Object_I_Register {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		driver.get("https://demo.nopcommerce.com/");
-		homePage = new HomePageObject(driver);
+		homePage = new UserHomePageObject(driver);
 
 		firstName = "Hanh";
 		lastName = "Dao Thi";
@@ -55,7 +55,7 @@ public class Level_03_Page_Object_I_Register {
 		System.out.println("Register_01_Step_01_Click to Register Link");
 		homePage.clickToRegisterLink();
 
-		registerPage = new RegisterPageObject(driver);
+		registerPage = new UserRegisterPageObject(driver);
 		System.out.println("Register_01_Step_02_Click to Register Button");
 		registerPage.clickToRegisterButton();
 
@@ -98,7 +98,6 @@ public class Level_03_Page_Object_I_Register {
 		System.out.println("Register_03_Step_03_Click to Register Button");
 		registerPage.clickToRegisterButton();
 		Assert.assertEquals(registerPage.getRegisterSuccessMessage(), "Your registration completed");
-		registerPage.clickToLogoutLink();
 
 	}
 

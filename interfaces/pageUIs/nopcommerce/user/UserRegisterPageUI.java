@@ -1,6 +1,6 @@
-package pageUIs.nopcommerce;
+package pageUIs.nopcommerce.user;
 
-public class RegisterPageUI {
+public class UserRegisterPageUI {
 	public static final String FIRSTNAME_TEXTBOX = "//input[@id='FirstName']";
 	public static final String LASTNAME_TEXTBOX = "//input[@id='LastName']";
 	public static final String EMAIL_TEXTBOX = "//input[@id='Email']";
@@ -14,6 +14,5 @@ public class RegisterPageUI {
 	public static final String CONFIRM_PASSWORD_ERROR_MESSAGE = "//span[@id='ConfirmPassword-error']";
 	public static final String EMAIL_ALREADYEXIT_ERROR_MESSAGE = "//div[contains(@class, 'message-error')]//li";
 	public static final String SUCCESSFULMESSAGE = "//div[@class='result']";
-	public static final String LOGOUT_BUTTON = "//a[@class='ico-logout']";
 
 }

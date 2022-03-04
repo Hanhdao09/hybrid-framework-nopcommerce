@@ -8,21 +8,21 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import commons.BaseTest_Nopcommerce;
-import pageObjects.nopcommerce.HomePageObject;
-import pageObjects.nopcommerce.PageGeneratorManager;
-import pageObjects.nopcommerce.RegisterPageObject;
+import commons.PageGeneratorManager;
+import pageObjects.nopcommerce.user.UserHomePageObject;
+import pageObjects.nopcommerce.user.UserRegisterPageObject;
 
 public class Level_06_Page_Generator_Manager_III_Register extends BaseTest_Nopcommerce {
 	private WebDriver driver;
-	private HomePageObject homePage;
-	private RegisterPageObject registerPage;
+	private UserHomePageObject homePage;
+	private UserRegisterPageObject registerPage;
 	private String firstName, lastName, email, password;
 
 	@Parameters("browser")
 	@BeforeClass
 	public void beforeClass(String browserName) {
 		driver = getBrowserDriver(browserName);
-		homePage = PageGeneratorManager.getHomePage(driver);
+		homePage = PageGeneratorManager.getUserHomePage(driver);
 
 		firstName = "Hanh";
 		lastName = "Dao Thi";
@@ -63,7 +63,7 @@ public class Level_06_Page_Generator_Manager_III_Register extends BaseTest_Nopco
 		registerPage.inputToConfirmPasswordTextbox(password);
 		registerPage.clickToRegisterButton();
 		Assert.assertEquals(registerPage.getRegisterSuccessMessage(), "Your registration completed");
-		homePage = registerPage.clickToLogoutLink();
+		homePage = registerPage.clickToLogoutLinkAtUserPage(driver);
 
 	}
 

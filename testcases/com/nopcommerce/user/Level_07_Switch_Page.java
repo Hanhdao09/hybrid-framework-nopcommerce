@@ -8,24 +8,24 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import commons.BaseTest_Nopcommerce;
-import pageObjects.nopcommerce.AddressPageObject;
-import pageObjects.nopcommerce.CustomerInfoPageObject;
-import pageObjects.nopcommerce.HomePageObject;
-import pageObjects.nopcommerce.LoginPageObject;
-import pageObjects.nopcommerce.MyProductReviewPageObject;
-import pageObjects.nopcommerce.PageGeneratorManager;
-import pageObjects.nopcommerce.RegisterPageObject;
-import pageObjects.nopcommerce.RewardPointPageObject;
+import commons.PageGeneratorManager;
+import pageObjects.nopcommerce.user.UserAddressPageObject;
+import pageObjects.nopcommerce.user.UserCustomerInfoPageObject;
+import pageObjects.nopcommerce.user.UserHomePageObject;
+import pageObjects.nopcommerce.user.UserLoginPageObject;
+import pageObjects.nopcommerce.user.UserMyProductReviewPageObject;
+import pageObjects.nopcommerce.user.UserRegisterPageObject;
+import pageObjects.nopcommerce.user.UserRewardPointPageObject;
 
 public class Level_07_Switch_Page extends BaseTest_Nopcommerce {
 	private WebDriver driver;
-	private HomePageObject homePage;
-	private RegisterPageObject registerPage;
-	private LoginPageObject loginPage;
-	private CustomerInfoPageObject customerInfoPage;
-	private AddressPageObject addressPage;
-	private MyProductReviewPageObject myproductReviewPage;
-	private RewardPointPageObject rewardPointPage;
+	private UserHomePageObject homePage;
+	private UserRegisterPageObject registerPage;
+	private UserLoginPageObject loginPage;
+	private UserCustomerInfoPageObject customerInfoPage;
+	private UserAddressPageObject addressPage;
+	private UserMyProductReviewPageObject myproductReviewPage;
+	private UserRewardPointPageObject rewardPointPage;
 
 	private String firstName, lastName, email, password;
 
@@ -33,7 +33,7 @@ public class Level_07_Switch_Page extends BaseTest_Nopcommerce {
 	@BeforeClass
 	public void beforeClass(String browserName) {
 		driver = getBrowserDriver(browserName);
-		homePage = PageGeneratorManager.getHomePage(driver);
+		homePage = PageGeneratorManager.getUserHomePage(driver);
 		firstName = "Hanh";
 		lastName = "Dao";
 		email = "afc" + getRandomNumber() + "@gmail.net";
@@ -50,7 +50,7 @@ public class Level_07_Switch_Page extends BaseTest_Nopcommerce {
 		registerPage.inputToConfirmPasswordTextbox(password);
 		registerPage.clickToRegisterButton();
 		Assert.assertEquals(registerPage.getRegisterSuccessMessage(), "Your registration completed");
-		homePage = registerPage.clickToLogoutLink();
+		homePage = registerPage.clickToLogoutLinkAtUserPage(driver);
 	}
 
 	@Test

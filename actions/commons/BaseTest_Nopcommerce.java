@@ -75,7 +75,7 @@ public class BaseTest_Nopcommerce {
 		}
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-		driver.get("https://demo.nopcommerce.com/");
+		driver.get(GlobalConstants.URL_PORTAL_PAGE);
 		return driver;
 	}
 
