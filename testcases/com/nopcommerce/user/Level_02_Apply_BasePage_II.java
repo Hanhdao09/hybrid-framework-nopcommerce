@@ -37,10 +37,10 @@ public class Level_02_Apply_BasePage_II {
 
 	@Test
 	public void TC_01_Register_Empty_Data() {
-		basePage.waitForAllElementClickable(driver, "//a[@class='ico-register']");
+		basePage.waitForElementClickable(driver, "//a[@class='ico-register']");
 		basePage.clickToElement(driver, "//a[@class='ico-register']");
 
-		basePage.waitForAllElementClickable(driver, "//button[@id='register-button']");
+		basePage.waitForElementClickable(driver, "//button[@id='register-button']");
 		basePage.clickToElement(driver, "//button[@id='register-button']");
 
 		Assert.assertEquals(basePage.getElementText(driver, "//span[@id='FirstName-error']"),
