@@ -47,7 +47,7 @@ public class Level_08_Switch_Roles extends BaseTest_Nopcommerce {
 		Assert.assertTrue(userCustomerInfoPage.isCustomerInfoDisplayed());
 		userHomePage = userCustomerInfoPage.clickToLogoutLinkAtUserPage(driver);
 
-		userHomePage.openPageUrl(driver, GlobalConstants.URL_ADMIN_PAGE);
+		userHomePage.openPageUrl(driver, GlobalConstants.ADMIN_DEV_URL);
 		adminLoginPage = PageGeneratorManager.getAdminLoginPage(driver);
 		adminDashboardPage = adminLoginPage.loginAsAdmin(adminEmailAddress, adminPassword);
 		Assert.assertTrue(adminDashboardPage.isDashboardHeaderDisplayed());
@@ -57,7 +57,7 @@ public class Level_08_Switch_Roles extends BaseTest_Nopcommerce {
 
 	@Test
 	public void User_02_Admin_To_User() {
-		adminLoginPage.openPageUrl(driver, GlobalConstants.URL_PORTAL_PAGE);
+		adminLoginPage.openPageUrl(driver, GlobalConstants.PORTAL_DEV_URL);
 		userHomePage = PageGeneratorManager.getUserHomePage(driver);
 		userLoginPage = userHomePage.clickToLoginLink();
 		userHomePage = userLoginPage.loginAsUser(userEmailAddress, userPassword);

@@ -1,4 +1,4 @@
-package javaOOP;
+package javaOOP.knowledge;
 
 public class CarOOP {
 	private String carCompany;

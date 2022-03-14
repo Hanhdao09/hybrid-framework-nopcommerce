@@ -1,4 +1,4 @@
-package javaOOP;
+package javaOOP.knowledge;
 
 public class Student {
 	private int studentCode;
