@@ -55,7 +55,49 @@ public class HomePageObject extends BasePage {
 			System.out.println(value);
 		}
 		return allRowValuesAllPage;
+	}
 
+	public void enterToTextboxByColumnNameAtRowNumber(String columnName, String rowNumber, String value) {
+		int columnIndex = getElementSize(driver, HomePageUI.COLUMN_INDEX_BY_NAME, columnName) + 1;
+		waitForElementVisible(driver, HomePageUI.ROW_TEXTBOX_BY_COLUMN_INDEX_AND_ROW_INDEX, rowNumber,
+				String.valueOf(columnIndex));
+		sendkeyToElement(driver, HomePageUI.ROW_TEXTBOX_BY_COLUMN_INDEX_AND_ROW_INDEX, value, rowNumber,
+				String.valueOf(columnIndex));
+	}
+
+	public void selectDropdownByColumnNameAtRowNuber(String columnName, String rowNumber, String value) {
+		int columnIndex = getElementSize(driver, HomePageUI.COLUMN_INDEX_BY_NAME, columnName) + 1;
+		waitForElementClickable(driver, HomePageUI.DROPDOWN_BY_COLUMN_INDEX_AND_ROW_INDEX, rowNumber,
+				String.valueOf(columnIndex));
+		selectItemInDefauldDropdown(driver, HomePageUI.DROPDOWN_BY_COLUMN_INDEX_AND_ROW_INDEX, value, rowNumber,
+				String.valueOf(columnIndex));
+	}
+
+	public void clickToLoadButton() {
+		waitForElementClickable(driver, HomePageUI.BUTON_LOAD);
+		clickToElement(driver, HomePageUI.BUTON_LOAD);
+	}
+
+	public void checkToCheckboxByColumnNameAtRowNumber(String columnName, String rowNumber) {
+		int columnIndex = getElementSize(driver, HomePageUI.COLUMN_INDEX_BY_NAME, columnName) + 1;
+		waitForElementClickable(driver, HomePageUI.CHECKBOX_BY_COLUMN_INDEX_AND_ROW_INDEX, rowNumber,
+				String.valueOf(columnIndex));
+		checkToDefaultCheckboxOrRadio(driver, HomePageUI.CHECKBOX_BY_COLUMN_INDEX_AND_ROW_INDEX, rowNumber,
+				String.valueOf(columnIndex));
+	}
+
+	public void unCheckToCheckboxByColumnNameAtRowNumber(String columnName, String rowNumber) {
+		int columnIndex = getElementSize(driver, HomePageUI.COLUMN_INDEX_BY_NAME, columnName) + 1;
+		waitForElementClickable(driver, HomePageUI.CHECKBOX_BY_COLUMN_INDEX_AND_ROW_INDEX, rowNumber,
+				String.valueOf(columnIndex));
+		uncheckToDefaultCheckboxOrRadio(driver, HomePageUI.CHECKBOX_BY_COLUMN_INDEX_AND_ROW_INDEX, rowNumber,
+				String.valueOf(columnIndex));
+
+	}
+
+	public void clickToIconByRowNumber(String rowNumber, String iconName) {
+		waitForElementClickable(driver, HomePageUI.ICON_BY_ROW_INDEX, rowNumber, iconName);
+		clickToElement(driver, HomePageUI.ICON_BY_ROW_INDEX, rowNumber, iconName);
 	}
 
 }

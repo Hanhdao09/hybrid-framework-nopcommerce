@@ -49,7 +49,7 @@ public class BaseTest_Nopcommerce {
 		} else if (browserList == BrowserList.COCCOC) {
 			WebDriverManager.chromedriver().driverVersion("97.0.4692.71").setup();
 			ChromeOptions option = new ChromeOptions();
-			if (GlobalConstants.OS_NAME.startsWith("Window")) {
+			if (GlobalConstants_nopcommerce.OS_NAME.startsWith("Window")) {
 				option.setBinary("C:\\Program Files (x86)\\CocCoc\\Browser\\Application\\browser.exe");
 			} else {
 				option.setBinary("....");
@@ -58,7 +58,7 @@ public class BaseTest_Nopcommerce {
 		} else if (browserList == BrowserList.BRAVE) {
 			WebDriverManager.chromedriver().driverVersion("98.0.4758.102").setup();
 			ChromeOptions option = new ChromeOptions();
-			if (GlobalConstants.OS_NAME.startsWith("Window")) {
+			if (GlobalConstants_nopcommerce.OS_NAME.startsWith("Window")) {
 				option.setBinary("C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe");
 			} else {
 				option.setBinary("....");
@@ -68,8 +68,8 @@ public class BaseTest_Nopcommerce {
 			throw new BrowserNotSupportedException(browserName);
 		}
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(GlobalConstants.LONG_TIMEOUT, TimeUnit.SECONDS);
-		driver.get(GlobalConstants.PORTAL_DEV_URL);
+		driver.manage().timeouts().implicitlyWait(GlobalConstants_nopcommerce.LONG_TIMEOUT, TimeUnit.SECONDS);
+		driver.get(GlobalConstants_nopcommerce.PORTAL_DEV_URL);
 		return driver;
 	}
 
@@ -102,7 +102,7 @@ public class BaseTest_Nopcommerce {
 		} else if (browserList == BrowserList.COCCOC) {
 			WebDriverManager.chromedriver().driverVersion("97.0.4692.71").setup();
 			ChromeOptions option = new ChromeOptions();
-			if (GlobalConstants.OS_NAME.startsWith("Window")) {
+			if (GlobalConstants_nopcommerce.OS_NAME.startsWith("Window")) {
 				option.setBinary("C:\\Program Files (x86)\\CocCoc\\Browser\\Application\\browser.exe");
 			} else {
 				option.setBinary("....");
@@ -111,7 +111,7 @@ public class BaseTest_Nopcommerce {
 		} else if (browserList == BrowserList.BRAVE) {
 			WebDriverManager.chromedriver().driverVersion("98.0.4758.102").setup();
 			ChromeOptions option = new ChromeOptions();
-			if (GlobalConstants.OS_NAME.startsWith("Window")) {
+			if (GlobalConstants_nopcommerce.OS_NAME.startsWith("Window")) {
 				option.setBinary("C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe");
 			} else {
 				option.setBinary("....");
@@ -121,7 +121,7 @@ public class BaseTest_Nopcommerce {
 			throw new BrowserNotSupportedException(browserName);
 		}
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(GlobalConstants.LONG_TIMEOUT, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(GlobalConstants_nopcommerce.LONG_TIMEOUT, TimeUnit.SECONDS);
 		driver.get(appUrl);
 		return driver;
 	}
@@ -130,13 +130,13 @@ public class BaseTest_Nopcommerce {
 		String envUrl = null;
 		EnvironmentList environment = EnvironmentList.valueOf(serverName.toUpperCase());
 		if (environment == EnvironmentList.DEV) {
-			envUrl = GlobalConstants.PORTAL_DEV_URL;
+			envUrl = GlobalConstants_nopcommerce.PORTAL_DEV_URL;
 		} else if (environment == EnvironmentList.TESTING) {
-			envUrl = GlobalConstants.PORTAL_TESTING_URL;
+			envUrl = GlobalConstants_nopcommerce.PORTAL_TESTING_URL;
 		} else if (environment == EnvironmentList.STAGING) {
-			envUrl = GlobalConstants.ADMIN_TESTING_URL;
+			envUrl = GlobalConstants_nopcommerce.ADMIN_TESTING_URL;
 		} else if (environment == EnvironmentList.PRODUCTION) {
-			envUrl = GlobalConstants.ADMIN_DEV_URL;
+			envUrl = GlobalConstants_nopcommerce.ADMIN_DEV_URL;
 		}
 		return envUrl;
 	}

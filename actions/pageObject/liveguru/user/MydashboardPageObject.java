@@ -1,9 +1,9 @@
-package pageObject.liveguru;
+package pageObject.liveguru.user;
 
 import org.openqa.selenium.WebDriver;
 
 import commons.BasePage;
-import pageUIs.liveguru.MydashboardPageUI;
+import pageUIs.liveguru.user.MydashboardPageUI;
 
 public class MydashboardPageObject extends BasePage {
 	WebDriver driver;
@@ -12,12 +12,12 @@ public class MydashboardPageObject extends BasePage {
 		this.driver = driver;
 	}
 
-	public HomePageObject clickToLogoutLink() {
+	public UserHomePageObject clickToLogoutLink() {
 		waitForElementVisible(driver, MydashboardPageUI.ACCOUNT_LINK);
 		clickToElement(driver, MydashboardPageUI.ACCOUNT_LINK);
 		waitForElementVisible(driver, MydashboardPageUI.LOGOUT_LINK);
 		clickToElement(driver, MydashboardPageUI.LOGOUT_LINK);
-		return new HomePageObject(driver);
+		return new UserHomePageObject(driver);
 	}
 
 	public boolean isSuccesfullMessageDisplayed() {

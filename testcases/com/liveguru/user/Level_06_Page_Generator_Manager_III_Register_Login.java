@@ -8,17 +8,17 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import commons.BaseTest_Liveguru;
-import pageObject.liveguru.HomePageObject;
-import pageObject.liveguru.LoginPageObject;
-import pageObject.liveguru.MydashboardPageObject;
-import pageObject.liveguru.PageGeneratorManager;
-import pageObject.liveguru.RegisterPageObject;
+import pageObject.liveguru.user.UserHomePageObject;
+import pageObject.liveguru.user.UserLoginPageObject;
+import pageObject.liveguru.user.MydashboardPageObject;
+import pageObject.liveguru.user.PageGeneratorManager;
+import pageObject.liveguru.user.UserRegisterPageObject;
 
 public class Level_06_Page_Generator_Manager_III_Register_Login extends BaseTest_Liveguru {
 	private WebDriver driver;
-	HomePageObject homePage;
-	RegisterPageObject registerPage;
-	LoginPageObject loginPage;
+	UserHomePageObject homePage;
+	UserRegisterPageObject registerPage;
+	UserLoginPageObject loginPage;
 	MydashboardPageObject mydashboardPage;
 	String firstName, lastName, email, password;
 

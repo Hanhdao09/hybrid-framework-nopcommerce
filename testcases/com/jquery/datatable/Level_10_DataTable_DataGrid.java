@@ -53,7 +53,6 @@ public class Level_10_DataTable_DataGrid extends BaseTest_Nopcommerce {
 		homePage.sleepinSecond(3);
 	}
 
-	@Test
 	public void Table_03_Enter_To_Header() {
 		// Hàm đọc dữ liệu của file country.txt=> Sau đó lưu vào 1 List<String>=> CHính
 		// là expectedValue
@@ -62,8 +61,35 @@ public class Level_10_DataTable_DataGrid extends BaseTest_Nopcommerce {
 	}
 
 	@Test
-	public void Table_04() {
+	public void Table_04_Action_To_Textbox_At_Any_Row() {
+		// click to Load Button
+		homePage.clickToLoadButton();
+		homePage.sleepinSecond(2);
+		// sendkey
+		homePage.enterToTextboxByColumnNameAtRowNumber("Album", "2", "Dearest");
+		homePage.enterToTextboxByColumnNameAtRowNumber("Artist", "4", "Rihana");
+		homePage.enterToTextboxByColumnNameAtRowNumber("Year", "3", "2012");
+		homePage.enterToTextboxByColumnNameAtRowNumber("Price", "1", "150");
 
+		// dropdown list
+		homePage.selectDropdownByColumnNameAtRowNuber("Origin", "5", "Japan");
+		homePage.sleepinSecond(4);
+		homePage.selectDropdownByColumnNameAtRowNuber("Origin", "1", "Hong Kong");
+		homePage.sleepinSecond(4);
+		homePage.selectDropdownByColumnNameAtRowNuber("Origin", "1", "Korea");
+		homePage.sleepinSecond(4);
+		// check to checkbox
+		homePage.checkToCheckboxByColumnNameAtRowNumber("With Poster?", "3");
+		homePage.checkToCheckboxByColumnNameAtRowNumber("With Poster?", "5");
+
+		homePage.unCheckToCheckboxByColumnNameAtRowNumber("With Poster?", "1");
+		homePage.unCheckToCheckboxByColumnNameAtRowNumber("With Poster?", "2");
+		homePage.unCheckToCheckboxByColumnNameAtRowNumber("With Poster?", "4");
+		// Insert Row Above
+		homePage.clickToIconByRowNumber("1", "Insert Row Above");
+		homePage.clickToIconByRowNumber("1", "Remove Current Row");
+		homePage.clickToIconByRowNumber("3", "Move Up");
+		homePage.clickToIconByRowNumber("4", "Move Down");
 	}
 
 	@AfterClass

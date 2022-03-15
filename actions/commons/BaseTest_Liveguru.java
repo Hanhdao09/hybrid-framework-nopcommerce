@@ -75,7 +75,7 @@ public class BaseTest_Liveguru {
 		}
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-		driver.get("http://live.techpanda.org/index.php/");
+		driver.get(GlobalConstants_liveguru.PORTAL_DEV_URL);
 		return driver;
 	}
 

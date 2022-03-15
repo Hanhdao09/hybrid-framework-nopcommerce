@@ -2,7 +2,7 @@ package commons;
 
 import java.io.File;
 
-public class GlobalConstants {
+public class GlobalConstants_nopcommerce {
 	// hằng số dùng chung cho tất cả các class của project
 	public static final String PORTAL_DEV_URL = "https://demo.nopcommerce.com/";
 	public static final String ADMIN_DEV_URL = "https://admin-demo.nopcommerce.com/";
