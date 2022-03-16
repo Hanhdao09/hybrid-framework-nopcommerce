@@ -1,4 +1,4 @@
-package com.jquery.datatable;
+package com.jquery;
 
 import java.util.List;
 
@@ -9,8 +9,8 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import commons.BaseTest_Nopcommerce;
-import pageObjects.jquery.HomePageObject;
-import pageObjects.jquery.PageGeneratorManager;
+import pageObjects.jquery.datatable.HomePageObject;
+import pageObjects.jquery.datatable.PageGeneratorManager;
 
 public class Level_10_DataTable_DataGrid extends BaseTest_Nopcommerce {
 	HomePageObject homePage;

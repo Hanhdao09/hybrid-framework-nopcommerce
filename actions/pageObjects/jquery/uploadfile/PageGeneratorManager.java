@@ -1,11 +1,10 @@
-package pageObjects.jquery;
+package pageObjects.jquery.uploadfile;
 
 import org.openqa.selenium.WebDriver;
 
 public class PageGeneratorManager {
 
-	public static HomePageObject getHomePage(WebDriver driver) {
+	public static HomePageObject getHomepage(WebDriver driver) {
 		return new HomePageObject(driver);
 	}
-
 }
