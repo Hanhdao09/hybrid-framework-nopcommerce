@@ -48,6 +48,7 @@ public class Level_11_Upload_File extends BaseTest_Nopcommerce {
 	public void Upload_02_Multiple_File_Per_Time() {
 		homePage.refreshCurrentPage(driver);
 		homePage.uploadMultipleFiles(driver, mutilpleFileNames);
+		homePage.sleepinSecond(3);
 		Assert.assertTrue(homePage.isFileNameDisplayed(hueName));
 		Assert.assertTrue(homePage.isFileNameDisplayed(dalatName));
 		Assert.assertTrue(homePage.isFileNameDisplayed(sapaName));

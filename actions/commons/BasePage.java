@@ -477,10 +477,10 @@ public class BasePage {
 		String filePath = GlobalConstants_nopcommerce.UPLOAD_FILE;
 		String fullFileName = "";
 		for (String file : fileNames) {
-			fullFileName = filePath + file + "\n";
+			fullFileName = fullFileName + filePath + file + "\n";
 		}
 		fullFileName = fullFileName.trim();
-		getWebElement(driver, BasePageJQueryUI.UPLOAD_FILE).sendKeys(fileNames);
+		getWebElement(driver, BasePageJQueryUI.UPLOAD_FILE).sendKeys(fullFileName);
 	}
 
 	public UserAddressPageObject openAddressLinkMyAccount(WebDriver driver) {
