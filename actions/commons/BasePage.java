@@ -2,11 +2,13 @@ package commons;
 
 import java.util.List;
 import java.util.Set;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -295,11 +297,49 @@ public class BasePage {
 	}
 
 	public boolean isElementDisplayed(WebDriver driver, String locatorType) {
-		return getWebElement(driver, locatorType).isDisplayed();
+		try {
+			return getWebElement(driver, locatorType).isDisplayed();
+		} catch (NoSuchElementException e) {
+			return false;
+		}
 	}
 
 	public boolean isElementDisplayed(WebDriver driver, String locatorType, String... dynamicValues) {
-		return getWebElement(driver, getDynamicXpath(locatorType, dynamicValues)).isDisplayed();
+		try {
+			return getWebElement(driver, getDynamicXpath(locatorType, dynamicValues)).isDisplayed();
+		} catch (NoSuchElementException e) {
+			return false;
+		}
+	}
+
+	public boolean isElementUndisplayed(WebDriver driver, String locatorType) {
+		overrideImplicitTimeOut(driver, GlobalConstants.SHORT_TIMEOUT);
+		List<WebElement> elements = getListWebElement(driver, locatorType);
+		overrideImplicitTimeOut(driver, GlobalConstants.LONG_TIMEOUT);
+		if (elements.size() == 0) {
+			return true;
+		} else if (elements.size() > 0 && !elements.get(0).isDisplayed()) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	public boolean isElementUndisplayed(WebDriver driver, String locatorType, String... dynamicValues) {
+		overrideImplicitTimeOut(driver, GlobalConstants.SHORT_TIMEOUT);
+		List<WebElement> elements = getListWebElement(driver, getDynamicXpath(locatorType, dynamicValues));
+		overrideImplicitTimeOut(driver, GlobalConstants.LONG_TIMEOUT);
+		if (elements.size() == 0) {
+			return true;
+		} else if (elements.size() > 0 && !elements.get(0).isDisplayed()) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	public void overrideImplicitTimeOut(WebDriver driver, long TimeOut) {
+		driver.manage().timeouts().implicitlyWait(TimeOut, TimeUnit.SECONDS);
 	}
 
 	public boolean isElementEnabled(WebDriver driver, String locatorType) {
@@ -474,7 +514,7 @@ public class BasePage {
 	}
 
 	public void uploadMultipleFiles(WebDriver driver, String... fileNames) {
-		String filePath = GlobalConstants_nopcommerce.UPLOAD_FILE;
+		String filePath = GlobalConstants.UPLOAD_FILE;
 		String fullFileName = "";
 		for (String file : fileNames) {
 			fullFileName = fullFileName + filePath + file + "\n";

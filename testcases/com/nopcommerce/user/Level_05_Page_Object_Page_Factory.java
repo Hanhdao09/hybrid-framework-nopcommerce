@@ -9,9 +9,9 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import commons.BaseTest_Nopcommerce;
+import commons.BaseTest;
 
-public class Level_05_Page_Object_Page_Factory extends BaseTest_Nopcommerce {
+public class Level_05_Page_Object_Page_Factory extends BaseTest {
 	private WebDriver driver;
 	private pageObjectFactory.nopcommerce.HomePageObject homePage;
 	private pageObjectFactory.nopcommerce.RegisterPageObject registerPage;

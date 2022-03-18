@@ -7,14 +7,14 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import commons.BaseTest_Nopcommerce;
+import commons.BaseTest;
 import commons.PageGeneratorManager;
 import pageObjects.nopcommerce.user.UserCustomerInfoPageObject;
 import pageObjects.nopcommerce.user.UserHomePageObject;
 import pageObjects.nopcommerce.user.UserLoginPageObject;
 import pageObjects.nopcommerce.user.UserRegisterPageObject;
 
-public class Level_06_Page_Generator_Manager_III_Login extends BaseTest_Nopcommerce {
+public class Level_06_Page_Generator_Manager_III_Login extends BaseTest {
 	private WebDriver driver;
 	private UserHomePageObject homePage;
 	private UserRegisterPageObject registerPage;

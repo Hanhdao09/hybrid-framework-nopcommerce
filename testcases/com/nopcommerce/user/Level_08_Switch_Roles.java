@@ -7,8 +7,8 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import commons.BaseTest_Nopcommerce;
-import commons.GlobalConstants_nopcommerce;
+import commons.BaseTest;
+import commons.GlobalConstants;
 import commons.PageGeneratorManager;
 import pageObject.nopcommerce.admin.AdminDashboardPageObject;
 import pageObject.nopcommerce.admin.AdminLoginPageObject;
@@ -16,7 +16,7 @@ import pageObjects.nopcommerce.user.UserCustomerInfoPageObject;
 import pageObjects.nopcommerce.user.UserHomePageObject;
 import pageObjects.nopcommerce.user.UserLoginPageObject;
 
-public class Level_08_Switch_Roles extends BaseTest_Nopcommerce {
+public class Level_08_Switch_Roles extends BaseTest {
 	private WebDriver driver;
 	private UserHomePageObject userHomePage;
 	private UserLoginPageObject userLoginPage;
@@ -47,7 +47,7 @@ public class Level_08_Switch_Roles extends BaseTest_Nopcommerce {
 		Assert.assertTrue(userCustomerInfoPage.isCustomerInfoDisplayed());
 		userHomePage = userCustomerInfoPage.clickToLogoutLinkAtUserPage(driver);
 
-		userHomePage.openPageUrl(driver, GlobalConstants_nopcommerce.ADMIN_DEV_URL);
+		userHomePage.openPageUrl(driver, GlobalConstants.ADMIN_DEV_URL);
 		adminLoginPage = PageGeneratorManager.getAdminLoginPage(driver);
 		adminDashboardPage = adminLoginPage.loginAsAdmin(adminEmailAddress, adminPassword);
 		Assert.assertTrue(adminDashboardPage.isDashboardHeaderDisplayed());
@@ -57,7 +57,7 @@ public class Level_08_Switch_Roles extends BaseTest_Nopcommerce {
 
 	@Test
 	public void User_02_Admin_To_User() {
-		adminLoginPage.openPageUrl(driver, GlobalConstants_nopcommerce.PORTAL_DEV_URL);
+		adminLoginPage.openPageUrl(driver, GlobalConstants.PORTAL_DEV_URL);
 		userHomePage = PageGeneratorManager.getUserHomePage(driver);
 		userLoginPage = userHomePage.clickToLoginLink();
 		userHomePage = userLoginPage.loginAsUser(userEmailAddress, userPassword);

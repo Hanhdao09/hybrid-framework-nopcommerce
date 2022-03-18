@@ -8,11 +8,11 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import commons.BaseTest_Nopcommerce;
+import commons.BaseTest;
 import pageObjects.jquery.datatable.HomePageObject;
 import pageObjects.jquery.datatable.PageGeneratorManager;
 
-public class Level_10_DataTable_DataGrid extends BaseTest_Nopcommerce {
+public class Level_10_DataTable_DataGrid extends BaseTest {
 	HomePageObject homePage;
 	List<String> actualallValueRowAtAllPage;
 	List<String> expectedallValueRowAtAllPage;
