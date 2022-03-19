@@ -1,0 +1,135 @@
+[INFO ] [2022-03-19 09:21:43,341] Register: Step_01: Click to Register Link
+[INFO ] [2022-03-19 09:21:44,600] Register: Step_02: Enter to FirstName Textbox with value 'Hanh'
+[INFO ] [2022-03-19 09:21:44,787] Register: Step_03: Enter to LastName Textbox with value 'Dao'
+[INFO ] [2022-03-19 09:21:44,932] Register: Step_04: Enter to Email Textbox with value 'afc37305@gmail.net'
+[INFO ] [2022-03-19 09:21:45,073] Register: Step_05: Enter to Password Textbox with value '12345678@Abc'
+[INFO ] [2022-03-19 09:21:45,195] Register: Step_06: Enter to Confirm Password Textbox with value '12345678@Abc'
+[INFO ] [2022-03-19 09:21:45,321] Register: Step_07: Click to Register Button
+[INFO ] [2022-03-19 09:21:46,750] Register: Step_08: Verify Success Register Message Displayed
+[INFO ] [2022-03-19 09:21:46,834]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-03-19 09:21:47,755] Login: Step_01: Click to Login Link
+[INFO ] [2022-03-19 09:21:48,899] Login: Step_02: Enter to Email Textbox with value 'afc37305@gmail.net'
+[INFO ] [2022-03-19 09:21:48,992] Login: Step_03: Enter to Password Textbox with value '12345678@Abc'
+[INFO ] [2022-03-19 09:21:49,086] Login: Step_04: Click to Login Button
+[INFO ] [2022-03-19 09:21:50,140] Login: Step_05: Verify My Account Link Displayed
+[INFO ] [2022-03-19 09:21:50,237]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-03-19 09:21:50,237] Login: Step_06: Click to My Account Link
+[INFO ] [2022-03-19 09:21:51,206] Login: Step_07: Verify Customer Info Displayed
+[INFO ] [2022-03-19 09:21:51,299]  -------------------------- PASSED -------------------------- 
+[2022-03-19 09:23:49,755] Register: Step_01: Click to Register Link
+[2022-03-19 09:23:51,050] Register: Step_02: Enter to FirstName Textbox with value 'Hanh'
+[2022-03-19 09:23:51,190] Register: Step_03: Enter to LastName Textbox with value 'Dao'
+[2022-03-19 09:23:51,301] Register: Step_04: Enter to Email Textbox with value 'afc11300@gmail.net'
+[2022-03-19 09:23:51,451] Register: Step_05: Enter to Password Textbox with value '12345678@Abc'
+[2022-03-19 09:23:51,570] Register: Step_06: Enter to Confirm Password Textbox with value '12345678@Abc'
+[2022-03-19 09:23:51,699] Register: Step_07: Click to Register Button
+[2022-03-19 09:23:53,151] Register: Step_08: Verify Success Register Message Displayed
+[2022-03-19 09:23:53,231]  -------------------------- PASSED -------------------------- 
+[2022-03-19 09:23:54,162] Login: Step_01: Click to Login Link
+[2022-03-19 09:23:55,174] Login: Step_02: Enter to Email Textbox with value 'afc11300@gmail.net'
+[2022-03-19 09:23:55,276] Login: Step_03: Enter to Password Textbox with value '12345678@Abc'
+[2022-03-19 09:23:55,364] Login: Step_04: Click to Login Button
+[2022-03-19 09:23:56,315] Login: Step_05: Verify My Account Link Displayed
+[2022-03-19 09:23:56,420]  -------------------------- PASSED -------------------------- 
+[2022-03-19 09:23:56,420] Login: Step_06: Click to My Account Link
+[2022-03-19 09:23:57,554] Login: Step_07: Verify Customer Info Displayed
+[2022-03-19 09:23:57,648]  -------------------------- PASSED -------------------------- 
+[2022-03-19 09:24:36,465] Register: Step_01: Click to Register Link
+[2022-03-19 09:24:37,715] Register: Step_02: Enter to FirstName Textbox with value 'Hanh'
+[2022-03-19 09:24:37,862] Register: Step_03: Enter to LastName Textbox with value 'Dao'
+[2022-03-19 09:24:37,956] Register: Step_04: Enter to Email Textbox with value 'afc31458@gmail.net'
+[2022-03-19 09:24:38,085] Register: Step_05: Enter to Password Textbox with value '12345678@Abc'
+[2022-03-19 09:24:38,186] Register: Step_06: Enter to Confirm Password Textbox with value '12345678@Abc'
+[2022-03-19 09:24:38,311] Register: Step_07: Click to Register Button
+[2022-03-19 09:24:39,787] Register: Step_08: Verify Success Register Message Displayed
+[2022-03-19 09:24:39,865]  -------------------------- PASSED -------------------------- 
+[2022-03-19 09:24:40,786] Login: Step_01: Click to Login Link
+[2022-03-19 09:24:41,843] Login: Step_02: Enter to Email Textbox with value 'afc31458@gmail.net'
+[2022-03-19 09:24:41,956] Login: Step_03: Enter to Password Textbox with value '12345678@Abc'
+[2022-03-19 09:24:42,043] Login: Step_04: Click to Login Button
+[2022-03-19 09:24:42,992] Login: Step_05: Verify My Account Link Displayed
+[2022-03-19 09:24:43,104]  -------------------------- PASSED -------------------------- 
+[2022-03-19 09:24:43,104] Login: Step_06: Click to My Account Link
+[2022-03-19 09:24:44,073] Login: Step_07: Verify Customer Info Displayed
+[2022-03-19 09:24:44,226]  -------------------------- PASSED -------------------------- 
+[2022-03-19 09:52:38,106] Register: Step_01: Click to Register Link
+[2022-03-19 09:52:39,275] Register: Step_02: Enter to FirstName Textbox with value 'Hanh'
+[2022-03-19 09:52:39,402] Register: Step_03: Enter to LastName Textbox with value 'Dao'
+[2022-03-19 09:52:39,505] Register: Step_04: Enter to Email Textbox with value 'afc67676@gmail.net'
+[2022-03-19 09:52:39,676] Register: Step_05: Enter to Password Textbox with value '12345678@Abc'
+[2022-03-19 09:52:39,807] Register: Step_06: Enter to Confirm Password Textbox with value '12345678@Abc'
+[2022-03-19 09:52:39,937] Register: Step_07: Click to Register Button
+[2022-03-19 09:52:41,288] Register: Step_08: Verify Success Register Message Displayed
+[2022-03-19 09:52:41,368]  -------------------------- PASSED -------------------------- 
+[2022-03-19 09:52:42,379] Login: Step_01: Click to Login Link
+[2022-03-19 09:52:43,374] Login: Step_02: Enter to Email Textbox with value 'afc67676@gmail.net'
+[2022-03-19 09:52:43,480] Login: Step_03: Enter to Password Textbox with value '12345678@Abc'
+[2022-03-19 09:52:43,567] Login: Step_04: Click to Login Button
+[2022-03-19 09:52:44,519] Login: Step_05: Verify My Account Link Displayed
+[2022-03-19 09:52:44,628]  -------------------------- PASSED -------------------------- 
+[2022-03-19 09:52:44,629] Login: Step_06: Click to My Account Link
+[2022-03-19 09:52:45,578] Login: Step_07: Verify Customer Info Displayed
+[2022-03-19 09:52:45,670]  -------------------------- PASSED -------------------------- 
+[2022-03-19 10:13:57,468] Register: Step_01: Click to Register Link
+[2022-03-19 10:13:58,665] Register: Step_02: Enter to FirstName Textbox with value 'Hanh'
+[2022-03-19 10:13:58,804] Register: Step_03: Enter to LastName Textbox with value 'Dao'
+[2022-03-19 10:13:58,902] Register: Step_04: Enter to Email Textbox with value 'afc58919@gmail.net'
+[2022-03-19 10:13:59,038] Register: Step_05: Enter to Password Textbox with value '12345678@Abc'
+[2022-03-19 10:13:59,154] Register: Step_06: Enter to Confirm Password Textbox with value '12345678@Abc'
+[2022-03-19 10:13:59,292] Register: Step_07: Click to Register Button
+[2022-03-19 10:14:00,815] Register: Step_08: Verify Success Register Message Displayed
+[2022-03-19 10:14:01,017]  -------------------------- PASSED -------------------------- 
+[2022-03-19 10:14:01,957] Login: Step_01: Click to Login Link
+[2022-03-19 10:14:02,990] Login: Step_02: Enter to Email Textbox with value 'afc58919@gmail.net'
+[2022-03-19 10:14:03,098] Login: Step_03: Enter to Password Textbox with value '12345678@Abc'
+[2022-03-19 10:14:03,185] Login: Step_04: Click to Login Button
+[2022-03-19 10:14:04,142] Login: Step_05: Verify My Account Link Displayed
+[2022-03-19 10:14:04,248]  -------------------------- PASSED -------------------------- 
+[2022-03-19 10:14:04,248] Login: Step_06: Click to My Account Link
+[2022-03-19 10:14:05,279] Login: Step_07: Verify Customer Info Displayed
+[2022-03-19 10:14:05,404]  -------------------------- PASSED -------------------------- 
+[2022-03-19 10:14:15,661] Register: Step_01: Click to Register Link
+[2022-03-19 10:14:16,842] Register: Step_02: Enter to FirstName Textbox with value 'Hanh'
+[2022-03-19 10:14:16,955] Register: Step_03: Enter to LastName Textbox with value 'Dao'
+[2022-03-19 10:14:17,259] Register: Step_04: Enter to Email Textbox with value 'afc40234@gmail.net'
+[2022-03-19 10:14:17,382] Register: Step_05: Enter to Password Textbox with value '12345678@Abc'
+[2022-03-19 10:14:17,489] Register: Step_06: Enter to Confirm Password Textbox with value '12345678@Abc'
+[2022-03-19 10:14:17,609] Register: Step_07: Click to Register Button
+[2022-03-19 10:14:19,028] Register: Step_08: Verify Success Register Message Displayed
+[2022-03-19 10:14:19,100]  -------------------------- PASSED -------------------------- 
+[2022-03-19 10:14:20,017] Login: Step_01: Click to Login Link
+[2022-03-19 10:14:21,023] Login: Step_02: Enter to Email Textbox with value 'afc40234@gmail.net'
+[2022-03-19 10:14:21,122] Login: Step_03: Enter to Password Textbox with value '12345678@Abc'
+[2022-03-19 10:14:21,200] Login: Step_04: Click to Login Button
+[2022-03-19 10:14:22,179] Login: Step_05: Verify My Account Link Displayed
+[2022-03-19 10:14:22,284]  -------------------------- PASSED -------------------------- 
+[2022-03-19 10:14:22,284] Login: Step_06: Click to My Account Link
+[2022-03-19 10:14:23,329] Login: Step_07: Verify Customer Info Displayed
+[2022-03-19 10:14:23,423]  -------------------------- PASSED -------------------------- 
+[2022-03-19 11:27:21,398] Register: Step_01: Click to Register Link
+[2022-03-19 11:27:22,682] Register: Step_02: Enter to FirstName Textbox with value 'Hanh'
+[2022-03-19 11:27:22,826] Register: Step_03: Enter to LastName Textbox with value 'Dao'
+[2022-03-19 11:27:22,936] Register: Step_04: Enter to Email Textbox with value 'afc59437@gmail.net'
+[2022-03-19 11:27:23,059] Register: Step_05: Enter to Password Textbox with value '12345678@Abc'
+[2022-03-19 11:27:23,163] Register: Step_06: Enter to Confirm Password Textbox with value '12345678@Abc'
+[2022-03-19 11:27:23,281] Register: Step_07: Click to Register Button
+[2022-03-19 11:27:24,873] Register: Step_08: Verify Success Register Message Displayed
+[2022-03-19 11:27:24,953]  -------------------------- FAILED -------------------------- 
+[2022-03-19 11:27:26,306] Login: Step_01: Click to Login Link
+[2022-03-19 11:27:27,602] Login: Step_02: Enter to Email Textbox with value 'afc59437@gmail.net'
+[2022-03-19 11:27:27,722] Login: Step_03: Enter to Password Textbox with value '12345678@Abc'
+[2022-03-19 11:27:27,805] Login: Step_04: Click to Login Button
+[2022-03-19 11:27:28,777] Login: Step_05: Verify My Account Link Displayed
+[2022-03-19 11:27:28,883]  -------------------------- FAILED -------------------------- 
+[2022-03-19 11:27:28,883] Login: Step_06: Click to My Account Link
+[2022-03-19 11:27:30,041] Login: Step_07: Verify Customer Info Displayed
+[2022-03-19 11:27:30,130]  -------------------------- FAILED -------------------------- 
+[2022-03-19 11:37:49,909] Register: Step_01: Click to Register Link
+[2022-03-19 11:37:51,115] Register: Step_02: Enter to FirstName Textbox with value 'Hanh'
+[2022-03-19 11:37:51,262] Register: Step_03: Enter to LastName Textbox with value 'Dao'
+[2022-03-19 11:37:51,355] Register: Step_04: Enter to Email Textbox with value 'afc98796@gmail.net'
+[2022-03-19 11:37:51,473] Register: Step_05: Enter to Password Textbox with value '12345678@Abc'
+[2022-03-19 11:37:51,572] Register: Step_06: Enter to Confirm Password Textbox with value '12345678@Abc'
+[2022-03-19 11:37:51,676] Register: Step_07: Click to Register Button
+[2022-03-19 11:37:52,950] Register: Step_08: Verify Success Register Message Displayed
+[2022-03-19 11:37:53,753] Login: Step_01: Click to Login Link

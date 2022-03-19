@@ -1,0 +1,9 @@
+[2022-03-19 11:37:49,909] Register: Step_01: Click to Register Link
+[2022-03-19 11:37:51,115] Register: Step_02: Enter to FirstName Textbox with value 'Hanh'
+[2022-03-19 11:37:51,262] Register: Step_03: Enter to LastName Textbox with value 'Dao'
+[2022-03-19 11:37:51,355] Register: Step_04: Enter to Email Textbox with value 'afc98796@gmail.net'
+[2022-03-19 11:37:51,473] Register: Step_05: Enter to Password Textbox with value '12345678@Abc'
+[2022-03-19 11:37:51,572] Register: Step_06: Enter to Confirm Password Textbox with value '12345678@Abc'
+[2022-03-19 11:37:51,676] Register: Step_07: Click to Register Button
+[2022-03-19 11:37:52,950] Register: Step_08: Verify Success Register Message Displayed
+[2022-03-19 11:37:53,753] Login: Step_01: Click to Login Link

@@ -7,7 +7,7 @@
   <test name="Run On Chrome">
   <parameter name = "browser" value = "chrome" />
     <classes>
-      <class name="com.facebook.Topic_13_Verify_Undisplayed_Element"/>
+      <class name="com.facebook.Topic_12_Custom_Hard_Assert"/>
     </classes>
   </test> 
 </suite>

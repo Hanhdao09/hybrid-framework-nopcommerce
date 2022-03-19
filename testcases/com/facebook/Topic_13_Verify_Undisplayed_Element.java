@@ -30,11 +30,13 @@ public class Topic_13_Verify_Undisplayed_Element extends BaseTest_Facebook {
 		verifyTrue(loginPage.isConfirmEmailAddressDisplayed());
 	}
 
+	@Test
 	public void TC_02_Element_isUnDisplayed_InDOM() {
 		loginPage.senkeyToEmailAddressTextbox("");
 		verifyTrue(loginPage.isConfirmEmailAddressUnDisplayed());
 	}
 
+	@Test
 	public void TC_03_Element_isUnDisplayed_NotInDOM() {
 		loginPage.closeSinUpForm();
 		verifyTrue(loginPage.isConfirmEmailAddressUnDisplayed());
