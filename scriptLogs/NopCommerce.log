@@ -133,3 +133,24 @@
 [2022-03-19 11:37:51,676] Register: Step_07: Click to Register Button
 [2022-03-19 11:37:52,950] Register: Step_08: Verify Success Register Message Displayed
 [2022-03-19 11:37:53,753] Login: Step_01: Click to Login Link
+[2022-03-19 12:20:27,046] Register: Step_01: Click to Register Link
+[2022-03-19 12:20:28,205] Register: Step_02: Enter to FirstName Textbox with value 'Hanh'
+[2022-03-19 12:20:28,373] Register: Step_03: Enter to LastName Textbox with value 'Dao'
+[2022-03-19 12:20:28,500] Register: Step_04: Enter to Email Textbox with value 'afc10557@gmail.net'
+[2022-03-19 12:20:28,653] Register: Step_05: Enter to Password Textbox with value '12345678@Abc'
+[2022-03-19 12:20:28,776] Register: Step_06: Enter to Confirm Password Textbox with value '12345678@Abc'
+[2022-03-19 12:20:28,899] Register: Step_07: Click to Register Button
+[2022-03-19 12:20:30,315] Register: Step_08: Verify Success Register Message Displayed
+[2022-03-19 12:20:30,410] Login: Step_01: Click to Login Link
+[2022-03-19 12:20:32,284] Login: Step_02: Enter to Email Textbox with value 'afc10557@gmail.net'
+[2022-03-19 12:20:32,391] Login: Step_03: Enter to Password Textbox with value '12345678@Abc'
+[2022-03-19 12:20:32,476] Login: Step_04: Click to Login Button
+[2022-03-19 12:20:33,782] Login: Step_05: Verify My Account Link Displayed
+[2022-03-19 12:55:20,745] Register: Step_01: Click to Register Link
+[2022-03-19 12:55:22,311] Register: Step_02: Enter to FirstName Textbox with value 'Hanh'
+[2022-03-19 12:55:22,454] Register: Step_03: Enter to LastName Textbox with value 'Dao'
+[2022-03-19 12:55:22,559] Register: Step_04: Enter to Email Textbox with value 'afc42676@gmail.net'
+[2022-03-19 12:55:22,671] Register: Step_05: Enter to Password Textbox with value '12345678@Abc'
+[2022-03-19 12:55:22,765] Register: Step_06: Enter to Confirm Password Textbox with value '12345678@Abc'
+[2022-03-19 12:55:22,864] Register: Step_07: Click to Register Button
+[2022-03-19 12:55:24,549] Register: Step_08: Verify Success Register Message Displayed

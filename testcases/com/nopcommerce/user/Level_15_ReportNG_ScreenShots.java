@@ -61,12 +61,13 @@ public class Level_15_ReportNG_ScreenShots extends BaseTest {
 
 		log.info("Register: Step_08: Verify Success Register Message Displayed");
 		assertEquals(registerPage.getRegisterSuccessMessage(), "Your registration completed...");
-		homePage = registerPage.clickToLogoutLinkAtUserPage(driver);
+
 	}
 
 	@Test
 	public void User_02_Login() {
 		log.info("Login: Step_01: Click to Login Link");
+		homePage = registerPage.clickToLogoutLinkAtUserPage(driver);
 		loginPage = homePage.clickToLoginLink();
 
 		log.info("Login: Step_02: Enter to Email Textbox with value '" + email + "'");
