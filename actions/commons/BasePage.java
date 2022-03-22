@@ -6,6 +6,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Cookie;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
@@ -57,6 +58,17 @@ public class BasePage {
 
 	public void fowardToPage(WebDriver driver) {
 		driver.navigate().forward();
+	}
+
+	public Set<Cookie> getAllCookies(WebDriver driver) {
+		return driver.manage().getCookies();
+	}
+
+	public void setCookie(WebDriver driver, Set<Cookie> loggedCookies) {
+		for (Cookie cookie : loggedCookies) {
+			driver.manage().addCookie(cookie);
+		}
+		sleepinSecond(2);
 	}
 
 	public void refreshCurrentPage(WebDriver driver) {

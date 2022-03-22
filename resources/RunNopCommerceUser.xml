@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="NopCommerce-User">
 <listeners>
- 	    <listener class-name="commons.MethodListener"/>
-<!--   	<listener class-name="reportConfigs.ReportNGListener"/> -->
-		<listener class-name="reportConfigs.ExtendReportListenerV2"/> -->
-        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
-        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+<!--  	    <listener class-name="commons.MethodListener"/> -->
+<!-- 	  	<listener class-name="reportConfigs.ReportNGListener"/> --> -->
+<!-- 		<listener class-name="reportConfigs.ExtendReportListenerV2"/> --> -->
+<!--         <listener class-name="org.uncommons.reportng.HTMLReporter"/> -->
+<!--         <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/> -->
 </listeners>
   <test name="Run On Firefox">
   <parameter name = "browser" value = "firefox" />
     <classes>
-      <class name="com.nopcommerce.user.Level_15_Extend_V2_ScreenShots"/>
+      <class name="com.nopcommerce.common.Common_01_Register_End_User"/>
+      <class name="com.nopcommerce.user.Level_16_Share_Data_A"/>
     </classes>
   </test> 
 <!--   <test name="Run On Chrome"> -->
