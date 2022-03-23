@@ -1,5 +1,6 @@
 package commons;
 
+import java.io.File;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
@@ -14,6 +15,7 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.opera.OperaDriver;
 import org.testng.Assert;
 import org.testng.Reporter;
+import org.testng.annotations.BeforeSuite;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import javaException.BrowserNotSupportedException;
@@ -24,6 +26,11 @@ public class BaseTest {
 	protected WebDriver driver;
 	protected final Log log;
 	protected String projectPath = System.getProperty("user.dir");
+
+	@BeforeSuite
+	public void initBeforeSuite() {
+		deleteAllFileInFolder();
+	}
 
 	protected BaseTest() {
 		log = LogFactory.getLog(getClass());
@@ -212,5 +219,20 @@ public class BaseTest {
 
 	protected boolean verifyEquals(Object actual, Object expected) {
 		return checkEquals(actual, expected);
+	}
+
+	public void deleteAllFileInFolder() {
+		try {
+			String pathFolderDownload = GlobalConstants.PROJECT_PATH + "/allure-json";
+			File file = new File(pathFolderDownload);
+			File[] listOfFiles = file.listFiles();
+			for (int i = 0; i < listOfFiles.length; i++) {
+				if (listOfFiles[i].isFile()) {
+					new File(listOfFiles[i].toString()).delete();
+				}
+			}
+		} catch (Exception e) {
+			System.out.print(e.getMessage());
+		}
 	}
 }

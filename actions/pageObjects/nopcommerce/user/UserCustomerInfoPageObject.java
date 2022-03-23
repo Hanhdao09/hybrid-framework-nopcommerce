@@ -3,6 +3,7 @@ package pageObjects.nopcommerce.user;
 import org.openqa.selenium.WebDriver;
 
 import commons.BasePage;
+import io.qameta.allure.Step;
 import pageUIs.nopcommerce.user.UserCustomerPageUI;
 
 public class UserCustomerInfoPageObject extends BasePage {
@@ -12,6 +13,7 @@ public class UserCustomerInfoPageObject extends BasePage {
 		this.driver = driver;
 	}
 
+	@Step("Verify Customer Info displayed")
 	public boolean isCustomerInfoDisplayed() {
 		waitForElementVisible(driver, UserCustomerPageUI.CUSTOMER_INFO_HEADER);
 		return isElementDisplayed(driver, UserCustomerPageUI.CUSTOMER_INFO_HEADER);

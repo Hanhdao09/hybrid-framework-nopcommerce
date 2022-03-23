@@ -19,6 +19,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import io.qameta.allure.Step;
 import pageObject.nopcommerce.admin.AdminLoginPageObject;
 import pageObjects.nopcommerce.user.UserAddressPageObject;
 import pageObjects.nopcommerce.user.UserCustomerInfoPageObject;
@@ -577,12 +578,14 @@ public class BasePage {
 
 	}
 
+	@Step("click To Logout Link At User Page")
 	public UserHomePageObject clickToLogoutLinkAtUserPage(WebDriver driver) {
 		waitForElementClickable(driver, UserBasePageUI.LOGOUT_LINK_AT_USER_PAGE);
 		clickToElement(driver, UserBasePageUI.LOGOUT_LINK_AT_USER_PAGE);
 		return PageGeneratorManager.getUserHomePage(driver);
 	}
 
+	@Step("click To Logout Link At Admin Page")
 	public AdminLoginPageObject clickToLogoutLinkAtAdminPage(WebDriver driver) {
 		waitForAllElementInvisible(driver, AdminBasePageUI.AJAXBUSY_LINK);
 		waitForElementClickable(driver, AdminBasePageUI.LOGOUT_LINK_AT_ADMIN_PAGE);

@@ -154,3 +154,17 @@
 [2022-03-19 12:55:22,765] Register: Step_06: Enter to Confirm Password Textbox with value '12345678@Abc'
 [2022-03-19 12:55:22,864] Register: Step_07: Click to Register Button
 [2022-03-19 12:55:24,549] Register: Step_08: Verify Success Register Message Displayed
+[2022-03-22 21:11:29,120] Pre-condition: Step_01: Click to Login Link
+[2022-03-22 21:11:32,422] Pre-condition: Step_02: Set Cookies and reload page
+[2022-03-22 21:11:36,604] Pre-condition: Step_03: Verify My Account Link Displayed
+[2022-03-22 21:15:30,583] Pre-condition: Step_01: Click to Login Link
+[2022-03-22 21:15:32,299] Pre-condition: Step_02: Set Cookies and reload page
+[2022-03-22 21:15:37,407] Pre-condition: Step_03: Verify My Account Link Displayed
+[2022-03-22 21:21:28,566] Pre-condition: Step_01: Click to Login Link
+[2022-03-22 21:21:30,746] Pre-condition: Step_02: Set Cookies and reload page
+[2022-03-22 21:21:36,936] Pre-condition: Step_03: Verify My Account Link Displayed
+[2022-03-22 21:21:37,048]  -------------------------- PASSED -------------------------- 
+[2022-03-22 21:24:18,353] Login: Step_01: Click to Login Link
+[2022-03-22 21:24:21,353] Login: Step_02: Enter to Email Textbox with value 'afc98088@gmail.net'
+[2022-03-22 21:24:21,468] Login: Step_03: Enter to Password Textbox with value '12345678@Abc'
+[2022-03-22 21:24:21,570] Login: Step_04: Click to Login Button
