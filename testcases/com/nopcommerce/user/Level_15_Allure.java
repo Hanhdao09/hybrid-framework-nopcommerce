@@ -10,7 +10,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import commons.BaseTest;
+import commons.BaseTest_Nopcommerce;
 import commons.PageGeneratorManager;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
@@ -20,7 +20,7 @@ import pageObjects.nopcommerce.user.UserHomePageObject;
 import pageObjects.nopcommerce.user.UserLoginPageObject;
 import pageObjects.nopcommerce.user.UserRegisterPageObject;
 
-public class Level_15_Allure extends BaseTest {
+public class Level_15_Allure extends BaseTest_Nopcommerce {
 	private WebDriver driver;
 	private UserHomePageObject homePage;
 	private UserRegisterPageObject registerPage;

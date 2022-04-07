@@ -11,9 +11,9 @@ import org.testng.ITestResult;
 
 import com.aventstack.extentreports.Status;
 
-import commons.BaseTest;
+import commons.BaseTest_Nopcommerce;
 
-public class ExtentTestListener extends BaseTest implements ITestListener {
+public class ExtentTestListener extends BaseTest_Nopcommerce implements ITestListener {
 	private static String getTestMethodName(ITestResult iTestResult) {
 		return iTestResult.getMethod().getConstructorOrMethod().getName();
 	}
@@ -40,7 +40,7 @@ public class ExtentTestListener extends BaseTest implements ITestListener {
 	@Override
 	public void onTestFailure(ITestResult iTestResult) {
 		Object testClass = iTestResult.getInstance();
-		WebDriver driver = ((BaseTest) testClass).getDriverInstance();
+		WebDriver driver = ((BaseTest_Nopcommerce) testClass).getDriverInstance();
 		String base64Screenshot = "data:image/png;base64,"
 				+ ((TakesScreenshot) driver).getScreenshotAs(OutputType.BASE64);
 		getTest().log(Status.FAIL, "Test Failed",

@@ -7,7 +7,7 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-import commons.BaseTest;
+import commons.BaseTest_Nopcommerce;
 import io.qameta.allure.Attachment;
 
 public class AllureTestListener implements ITestListener {
@@ -37,7 +37,7 @@ public class AllureTestListener implements ITestListener {
 	@Override
 	public void onTestFailure(ITestResult iTestResult) {
 		Object testClass = iTestResult.getInstance();
-		WebDriver driver = ((BaseTest) testClass).getDriverInstance();
+		WebDriver driver = ((BaseTest_Nopcommerce) testClass).getDriverInstance();
 		saveScreenshotPNG(iTestResult.getName(), driver);
 		saveTextLog(getTestMethodName(iTestResult) + " failed and screenshot taken!");
 	}

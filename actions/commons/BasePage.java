@@ -253,6 +253,12 @@ public class BasePage {
 		return getWebElement(driver, locatorType).getAttribute(attributeName);
 	}
 
+	public String getElementAttribute(WebDriver driver, String locatorType, String attributeName,
+			String... dynamicValues) {
+
+		return getWebElement(driver, getDynamicXpath(locatorType, dynamicValues)).getAttribute(attributeName);
+	}
+
 	public String getElementText(WebDriver driver, String locatorType) {
 
 		return getWebElement(driver, locatorType).getText();
@@ -436,7 +442,7 @@ public class BasePage {
 	}
 
 	public boolean areJQueryAndJSLoadedSuccess(WebDriver driver) {
-		WebDriverWait explicitWait = new WebDriverWait(driver, 30);
+		WebDriverWait explicitWait = new WebDriverWait(driver, GlobalConstants.LONG_TIMEOUT);
 		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
 
 		ExpectedCondition<Boolean> jQueryLoad = new ExpectedCondition<Boolean>() {
@@ -483,45 +489,45 @@ public class BasePage {
 	}
 
 	public void waitForElementVisible(WebDriver driver, String locatorType) {
-		WebDriverWait explicitWait = new WebDriverWait(driver, 30);
+		WebDriverWait explicitWait = new WebDriverWait(driver, GlobalConstants.LONG_TIMEOUT);
 		explicitWait.until(ExpectedConditions.visibilityOfElementLocated(getByLocator(locatorType)));
 	}
 
 	public void waitForElementVisible(WebDriver driver, String locatorType, String... dynamicValues) {
-		WebDriverWait explicitWait = new WebDriverWait(driver, 30);
+		WebDriverWait explicitWait = new WebDriverWait(driver, GlobalConstants.LONG_TIMEOUT);
 		explicitWait.until(ExpectedConditions
 				.visibilityOfElementLocated(getByLocator(getDynamicXpath(locatorType, dynamicValues))));
 	}
 
 	public void waitForAllElementVisible(WebDriver driver, String locatorType) {
-		WebDriverWait explicitWait = new WebDriverWait(driver, 30);
+		WebDriverWait explicitWait = new WebDriverWait(driver, GlobalConstants.LONG_TIMEOUT);
 		explicitWait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(getByLocator(locatorType)));
 	}
 
 	public void waitForAllElementVisible(WebDriver driver, String locatorType, String... dynamicValues) {
-		WebDriverWait explicitWait = new WebDriverWait(driver, 30);
+		WebDriverWait explicitWait = new WebDriverWait(driver, GlobalConstants.LONG_TIMEOUT);
 		explicitWait.until(ExpectedConditions
 				.visibilityOfAllElementsLocatedBy(getByLocator(getDynamicXpath(locatorType, dynamicValues))));
 	}
 
 	public void waitForAllElementInvisible(WebDriver driver, String locatorType) {
-		WebDriverWait explicitWait = new WebDriverWait(driver, 30);
+		WebDriverWait explicitWait = new WebDriverWait(driver, GlobalConstants.LONG_TIMEOUT);
 		explicitWait.until(ExpectedConditions.invisibilityOfAllElements(getListWebElement(driver, locatorType)));
 	}
 
 	public void waitForAllElementInvisible(WebDriver driver, String locatorType, String... dynamicValues) {
-		WebDriverWait explicitWait = new WebDriverWait(driver, 30);
+		WebDriverWait explicitWait = new WebDriverWait(driver, GlobalConstants.LONG_TIMEOUT);
 		explicitWait.until(ExpectedConditions
 				.invisibilityOfAllElements(getListWebElement(driver, getDynamicXpath(locatorType, dynamicValues))));
 	}
 
 	public void waitForElementClickable(WebDriver driver, String locatorType) {
-		WebDriverWait explicitWait = new WebDriverWait(driver, 30);
+		WebDriverWait explicitWait = new WebDriverWait(driver, GlobalConstants.LONG_TIMEOUT);
 		explicitWait.until(ExpectedConditions.elementToBeClickable(getByLocator(locatorType)));
 	}
 
 	public void waitForElementClickable(WebDriver driver, String locatorType, String... dynamicValues) {
-		WebDriverWait explicitWait = new WebDriverWait(driver, 30);
+		WebDriverWait explicitWait = new WebDriverWait(driver, GlobalConstants.LONG_TIMEOUT);
 		explicitWait.until(
 				ExpectedConditions.elementToBeClickable(getByLocator(getDynamicXpath(locatorType, dynamicValues))));
 	}
@@ -591,6 +597,71 @@ public class BasePage {
 		waitForElementClickable(driver, AdminBasePageUI.LOGOUT_LINK_AT_ADMIN_PAGE);
 		clickToElement(driver, AdminBasePageUI.LOGOUT_LINK_AT_ADMIN_PAGE);
 		return PageGeneratorManager.getAdminLoginPage(driver);
+	}
+
+	/**
+	 * Enter to dynamic textbox by ID
+	 * 
+	 * @author Hanh Dao Thi
+	 * @param driver
+	 * @param textboxID
+	 * @param value
+	 */
+	public void inputToTextboxByID(WebDriver driver, String textboxID, String value) {
+		waitForElementVisible(driver, UserBasePageUI.DYNAMIC_TEXBOX_BY_ID, textboxID);
+		sendkeyToElement(driver, UserBasePageUI.DYNAMIC_TEXBOX_BY_ID, value, textboxID);
+	}
+
+	public void clickToHeaderLinkByText(WebDriver driver, String linkText) {
+		waitForElementClickable(driver, UserBasePageUI.DYNAMIC_HEADER_LINK_BY_TEXT, linkText);
+		clickToElement(driver, UserBasePageUI.DYNAMIC_HEADER_LINK_BY_TEXT, linkText);
+	}
+
+	/**
+	 * Click to dynamic button by text
+	 * 
+	 * @author Hanh Dao Thi
+	 * @param driver
+	 * @param buttonText
+	 */
+	public void clickToButtonByText(WebDriver driver, String buttonText) {
+		waitForElementClickable(driver, UserBasePageUI.DYNAMIC_BUTTON_BY_TEXT, buttonText);
+		clickToElement(driver, UserBasePageUI.DYNAMIC_BUTTON_BY_TEXT, buttonText);
+	}
+
+	public void selectDropdownByName(WebDriver driver, String textValue, String dropdownName) {
+		waitForElementClickable(driver, UserBasePageUI.DYNAMIC_DROPDOWN_BY_NAME, dropdownName);
+		selectItemInDefauldDropdown(driver, UserBasePageUI.DYNAMIC_DROPDOWN_BY_NAME, textValue, dropdownName);
+	}
+
+	/**
+	 * Click to dynamic radio by ID
+	 * 
+	 * @author Hanh Dao Thi
+	 * @param driver
+	 * @param radioID
+	 */
+	public void clickToRadioByLabel(WebDriver driver, String radioLabel) {
+		waitForElementClickable(driver, UserBasePageUI.DYNAMIC_RADIO_BY_LABEL, radioLabel);
+		checkToDefaultCheckboxOrRadio(driver, UserBasePageUI.DYNAMIC_RADIO_BY_LABEL, radioLabel);
+	}
+
+	/**
+	 * Click to dynamic checkbox by ID
+	 * 
+	 * @author Hanh Dao Thi
+	 * @param driver
+	 * @param checkboxID
+	 */
+
+	public void clickToCheckboxByLabel(WebDriver driver, String checkboxLabel) {
+		waitForElementClickable(driver, UserBasePageUI.DYNAMIC_CHECKBOX_BY_LABEL, checkboxLabel);
+		checkToDefaultCheckboxOrRadio(driver, UserBasePageUI.DYNAMIC_CHECKBOX_BY_LABEL, checkboxLabel);
+	}
+
+	public String getTextboxValueByID(WebDriver driver, String textboxID, String attributeName) {
+		waitForElementVisible(driver, UserBasePageUI.DYNAMIC_TEXBOX_BY_ID, textboxID);
+		return getElementAttribute(driver, UserBasePageUI.DYNAMIC_TEXBOX_BY_ID, attributeName, textboxID);
 	}
 
 }

@@ -10,13 +10,13 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 
-import commons.BaseTest;
+import commons.BaseTest_Nopcommerce;
 import commons.PageGeneratorManager;
 import pageObjects.nopcommerce.user.UserHomePageObject;
 import pageObjects.nopcommerce.user.UserLoginPageObject;
 import pageObjects.nopcommerce.user.UserRegisterPageObject;
 
-public class Common_01_Register_Cookies extends BaseTest {
+public class Common_01_Register_Cookies extends BaseTest_Nopcommerce {
 	private WebDriver driver;
 	private UserHomePageObject homePage;
 	private UserRegisterPageObject registerPage;

@@ -7,7 +7,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import commons.BaseTest;
+import commons.BaseTest_Nopcommerce;
 import commons.PageGeneratorManager;
 import pageObjects.nopcommerce.user.UserAddressPageObject;
 import pageObjects.nopcommerce.user.UserCustomerInfoPageObject;
@@ -17,7 +17,7 @@ import pageObjects.nopcommerce.user.UserMyProductReviewPageObject;
 import pageObjects.nopcommerce.user.UserRegisterPageObject;
 import pageObjects.nopcommerce.user.UserRewardPointPageObject;
 
-public class Level_09_Dynamic_Locator extends BaseTest {
+public class Level_09_Dynamic_Locator extends BaseTest_Nopcommerce {
 	private WebDriver driver;
 	private UserHomePageObject homePage;
 	private UserRegisterPageObject registerPage;

@@ -168,3 +168,156 @@
 [2022-03-22 21:24:21,353] Login: Step_02: Enter to Email Textbox with value 'afc98088@gmail.net'
 [2022-03-22 21:24:21,468] Login: Step_03: Enter to Password Textbox with value '12345678@Abc'
 [2022-03-22 21:24:21,570] Login: Step_04: Click to Login Button
+[2022-04-07 06:14:11,271] OS name = windows 10
+[2022-04-07 06:14:11,278] Cannot invoke "Object.toString()" because "this.driver" is null
+[2022-04-07 06:18:52,231] Register: Step_01: Click to Register Link
+[2022-04-07 06:18:53,517] Register: Step_02: Enter to FirstName Textbox with value 'Hanh'
+[2022-04-07 06:18:53,641] Register: Step_03: Enter to LastName Textbox with value 'Dao'
+[2022-04-07 06:18:53,728] Register: Step_04: Enter to Email Textbox with value 'afc68704@gmail.net'
+[2022-04-07 06:18:53,825] Register: Step_05: Enter to Password Textbox with value '12345678@Abc'
+[2022-04-07 06:18:53,926] Register: Step_06: Enter to Confirm Password Textbox with value '12345678@Abc'
+[2022-04-07 06:18:54,029] Register: Step_07: Click to Register Button
+[2022-04-07 06:18:55,378] Register: Step_08: Verify Success Register Message Displayed
+[2022-04-07 06:18:55,576] Login: Step_01: Click to Login Link
+[2022-04-07 06:19:27,919] OS name = windows 10
+[2022-04-07 06:19:27,919] Driver instance name = firefoxdriver: firefox on windows (5fcbc613-a6c2-4113-81cc-f9e7e2c4ede0)
+[2022-04-07 06:21:22,709] Register: Step_01: Click to Register Link
+[2022-04-07 06:21:23,923] Register: Step_02: Enter to FirstName Textbox with value 'Hanh'
+[2022-04-07 06:21:24,065] Register: Step_03: Enter to LastName Textbox with value 'Dao'
+[2022-04-07 06:21:24,163] Register: Step_04: Enter to Email Textbox with value 'afc35714@gmail.net'
+[2022-04-07 06:21:24,284] Register: Step_05: Enter to Password Textbox with value '12345678@Abc'
+[2022-04-07 06:21:24,393] Register: Step_06: Enter to Confirm Password Textbox with value '12345678@Abc'
+[2022-04-07 06:21:24,509] Register: Step_07: Click to Register Button
+[2022-04-07 06:21:25,844] Register: Step_08: Verify Success Register Message Displayed
+[2022-04-07 06:21:26,048] Login: Step_01: Click to Login Link
+[2022-04-07 06:21:28,078] Login: Step_02: Enter to Email Textbox with value 'afc35714@gmail.net'
+[2022-04-07 06:21:28,185] Login: Step_03: Enter to Password Textbox with value '12345678@Abc'
+[2022-04-07 06:21:28,264] Login: Step_04: Click to Login Button
+[2022-04-07 06:21:54,558] OS name = windows 10
+[2022-04-07 06:21:54,558] Driver instance name = firefoxdriver: firefox on windows (79ab86bd-b9a6-4a08-b410-7f4cd9c27a19)
+[2022-04-07 06:21:54,801] Failed to decode response from marionette
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DTHANH', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 99.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220330194208, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 8364, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 79ab86bd-b9a6-4a08-b410-7f4cd9c27a19
+[2022-04-07 06:22:15,746] Register: Step_01: Click to Register Link
+[2022-04-07 06:22:17,011] Register: Step_02: Enter to FirstName Textbox with value 'Hanh'
+[2022-04-07 06:22:17,148] Register: Step_03: Enter to LastName Textbox with value 'Dao'
+[2022-04-07 06:22:17,231] Register: Step_04: Enter to Email Textbox with value 'afc59189@gmail.net'
+[2022-04-07 06:22:17,354] Register: Step_05: Enter to Password Textbox with value '12345678@Abc'
+[2022-04-07 06:22:17,454] Register: Step_06: Enter to Confirm Password Textbox with value '12345678@Abc'
+[2022-04-07 06:22:17,578] Register: Step_07: Click to Register Button
+[2022-04-07 06:22:18,921] Register: Step_08: Verify Success Register Message Displayed
+[2022-04-07 06:22:19,130] Login: Step_01: Click to Login Link
+[2022-04-07 06:22:21,701] Login: Step_02: Enter to Email Textbox with value 'afc59189@gmail.net'
+[2022-04-07 06:22:21,809] Login: Step_03: Enter to Password Textbox with value '12345678@Abc'
+[2022-04-07 06:22:21,890] Login: Step_04: Click to Login Button
+[2022-04-07 06:22:22,866] Login: Step_05: Verify My Account Link Displayed
+[2022-04-07 06:22:22,989] Login: Step_06: Click to My Account Link
+[2022-04-07 06:22:23,950] Login: Step_07: Verify Customer Info Displayed
+[2022-04-07 06:22:24,063] OS name = windows 10
+[2022-04-07 06:22:24,063] Driver instance name = firefoxdriver: firefox on windows (bbc290b3-62f0-43a7-afc5-f58250770a4d)
+[2022-04-07 19:54:28,007] Register: Step_01: Click to Register Link
+[2022-04-07 19:54:29,475] Register: Step_02: Click to Gender Radio
+[2022-04-07 19:54:29,818] Register: Step_03: Enter to FirstName Textbox with value 'Hanh'
+[2022-04-07 19:54:29,934] Register: Step_04: Enter to LastName Textbox with value 'Dao'
+[2022-04-07 19:54:30,041] Register: Step_05: Select birthday
+[2022-04-07 19:55:01,349] Login: Step_01: Click to Login Link
+[2022-04-07 19:55:32,472] OS name = windows 10
+[2022-04-07 19:55:32,473] Driver instance name = firefoxdriver: firefox on windows (e53372ba-53a6-40f3-8783-02148e4d3433)
+[2022-04-07 20:00:54,610] Register: Step_01: Click to Register Link
+[2022-04-07 20:00:55,993] Register: Step_02: Click to Gender Radio
+[2022-04-07 20:00:56,305] Register: Step_03: Enter to FirstName Textbox with value 'Hanh'
+[2022-04-07 20:00:56,410] Register: Step_04: Enter to LastName Textbox with value 'Dao'
+[2022-04-07 20:00:56,511] Register: Step_05: Select birthday
+[2022-04-07 20:01:27,786] Login: Step_01: Click to Login Link
+[2022-04-07 20:01:58,914] OS name = windows 10
+[2022-04-07 20:01:58,915] Driver instance name = firefoxdriver: firefox on windows (a1e0e548-7923-490e-a8b6-8d585c17de79)
+[2022-04-07 20:09:28,388] Register: Step_01: Click to Register Link
+[2022-04-07 20:09:29,652] Register: Step_02: Click to Gender Radio
+[2022-04-07 20:09:29,969] Register: Step_03: Enter to FirstName Textbox with value 'Hanh'
+[2022-04-07 20:09:30,094] Register: Step_04: Enter to LastName Textbox with value 'Dao'
+[2022-04-07 20:09:30,191] Register: Step_05: Select birthday
+[2022-04-07 20:09:40,790] Login: Step_01: Click to Login Link
+[2022-04-07 20:09:50,855] OS name = windows 10
+[2022-04-07 20:09:50,856] Driver instance name = firefoxdriver: firefox on windows (57a4bf78-8490-4dce-a465-584b050dea48)
+[2022-04-07 20:10:43,591] Register: Step_01: Click to Register Link
+[2022-04-07 20:10:44,852] Register: Step_02: Click to Gender Radio
+[2022-04-07 20:10:45,164] Register: Step_03: Enter to FirstName Textbox with value 'Hanh'
+[2022-04-07 20:10:45,268] Register: Step_04: Enter to LastName Textbox with value 'Dao'
+[2022-04-07 20:10:45,388] Register: Step_05: Select birthday
+[2022-04-07 20:10:46,395] Register: Step_06: Enter to Email Textbox with value 'afc32044@gmail.net'
+[2022-04-07 20:10:46,539] Register: Step_07: Enter to Password Textbox with value '12345678@Abc'
+[2022-04-07 20:10:46,626] Register: Step_08: Enter to Confirm Password Textbox with value '12345678@Abc'
+[2022-04-07 20:10:46,726] Register: Step_09: Click to Register Button
+[2022-04-07 20:10:48,141] Register: Step_10: Verify Success Register Message Displayed
+[2022-04-07 20:10:48,474] Login: Step_01: Click to Login Link
+[2022-04-07 20:10:50,429] Login: Step_02: Enter to Email Textbox with value 'afc32044@gmail.net'
+[2022-04-07 20:10:50,531] Login: Step_03: Enter to Password Textbox with value '12345678@Abc'
+[2022-04-07 20:10:50,613] Login: Step_04: Click to Login Button
+[2022-04-07 20:10:51,699] Login: Step_05: Verify My Account Link Displayed
+[2022-04-07 20:10:51,804] Login: Step_06: Click to My Account Link
+[2022-04-07 20:10:52,822] Login: Step_07: Verify Customer Info Displayed
+[2022-04-07 20:10:52,914] OS name = windows 10
+[2022-04-07 20:10:52,914] Driver instance name = firefoxdriver: firefox on windows (8327a807-0921-4db6-8263-ef2d2f90bf0e)
+[2022-04-07 20:21:07,913] Register: Step_01: Click to Register Link
+[2022-04-07 20:21:09,319] Register: Step_02: Click to Gender Radio
+[2022-04-07 20:21:09,660] Register: Step_03: Enter to FirstName Textbox with value 'Hanh'
+[2022-04-07 20:21:09,766] Register: Step_04: Enter to LastName Textbox with value 'Dao'
+[2022-04-07 20:21:09,873] Register: Step_05: Select birthday
+[2022-04-07 20:21:10,888] Register: Step_06: Enter to Email Textbox with value 'afc56320@gmail.net'
+[2022-04-07 20:21:10,992] Register: Step_07: Click to checkbox By label
+[2022-04-07 20:21:11,279] Register: Step_08: Enter to Password Textbox with value '12345678@Abc'
+[2022-04-07 20:21:11,394] Register: Step_09: Enter to Confirm Password Textbox with value '12345678@Abc'
+[2022-04-07 20:21:11,486] Register: Step_10: Click to Register Button
+[2022-04-07 20:21:12,983] Register: Step_11: Verify Success Register Message Displayed
+[2022-04-07 20:21:13,185] Login: Step_01: Click to Login Link
+[2022-04-07 20:21:15,117] Login: Step_02: Enter to Email Textbox with value 'afc56320@gmail.net'
+[2022-04-07 20:21:15,219] Login: Step_03: Enter to Password Textbox with value '12345678@Abc'
+[2022-04-07 20:21:15,311] Login: Step_04: Click to Login Button
+[2022-04-07 20:21:16,321] Login: Step_05: Verify My Account Link Displayed
+[2022-04-07 20:21:16,419] Login: Step_06: Click to My Account Link
+[2022-04-07 20:21:17,460] Login: Step_07: Verify Customer Info Displayed
+[2022-04-07 20:21:17,566] OS name = windows 10
+[2022-04-07 20:21:17,566] Driver instance name = firefoxdriver: firefox on windows (04eacc3b-ec56-4d81-9bf2-ef91b43bbe9a)
+[2022-04-07 20:29:18,316] Register: Step_01: Click to Register Link
+[2022-04-07 20:29:20,687] Register: Step_02: Click to Gender Radio
+[2022-04-07 20:29:21,015] Register: Step_03: Enter to FirstName Textbox with value 'Hanh'
+[2022-04-07 20:29:21,139] Register: Step_04: Enter to LastName Textbox with value 'Dao'
+[2022-04-07 20:29:21,234] Register: Step_05: Select birthday
+[2022-04-07 20:29:22,260] Register: Step_06: Enter to Email Textbox with value 'afc32639@gmail.net'
+[2022-04-07 20:29:22,381] Register: Step_07: Click to checkbox By label
+[2022-04-07 20:29:22,435] Register: Step_08: Enter to Password Textbox with value '12345678@Abc'
+[2022-04-07 20:29:22,528] Register: Step_09: Enter to Confirm Password Textbox with value '12345678@Abc'
+[2022-04-07 20:29:22,614] Register: Step_10: Click to Register Button
+[2022-04-07 20:29:24,184] Register: Step_11: Verify Success Register Message Displayed
+[2022-04-07 20:29:24,385] Login: Step_01: Click to Login Link
+[2022-04-07 20:29:26,556] Login: Step_02: Enter to Email Textbox with value 'afc32639@gmail.net'
+[2022-04-07 20:29:26,661] Login: Step_03: Enter to Password Textbox with value '12345678@Abc'
+[2022-04-07 20:29:26,750] Login: Step_04: Click to Login Button
+[2022-04-07 20:29:27,781] Login: Step_05: Verify My Account Link Displayed
+[2022-04-07 20:29:27,891] Login: Step_06: Click to My Account Link
+[2022-04-07 20:29:28,815] Login: Step_07: Verify Customer Info Displayed
+[2022-04-07 20:29:28,915] OS name = windows 10
+[2022-04-07 20:29:28,916] Driver instance name = firefoxdriver: firefox on windows (960acf0c-7707-4bfa-8727-7fcf50871e89)
+[2022-04-07 20:33:14,618] Register: Step_01: Click to Register Link
+[2022-04-07 20:33:15,920] Register: Step_02: Click to Gender Radio
+[2022-04-07 20:33:16,263] Register: Step_03: Enter to FirstName Textbox with value 'Hanh'
+[2022-04-07 20:33:16,403] Register: Step_04: Enter to LastName Textbox with value 'Dao'
+[2022-04-07 20:33:16,485] Register: Step_05: Select birthday
+[2022-04-07 20:33:17,454] Register: Step_06: Enter to Email Textbox with value 'afc73049@gmail.net'
+[2022-04-07 20:33:17,561] Register: Step_07: Click to checkbox By label
+[2022-04-07 20:33:17,633] Register: Step_08: Enter to Password Textbox with value '12345678@Abc'
+[2022-04-07 20:33:17,746] Register: Step_09: Enter to Confirm Password Textbox with value '12345678@Abc'
+[2022-04-07 20:33:17,854] Register: Step_10: Click to Register Button
+[2022-04-07 20:33:19,603] Register: Step_11: Verify Success Register Message Displayed
+[2022-04-07 20:33:19,796] Login: Step_01: Click to Login Link
+[2022-04-07 20:33:21,805] Login: Step_02: Enter to Email Textbox with value 'afc73049@gmail.net'
+[2022-04-07 20:33:21,925] Login: Step_03: Enter to Password Textbox with value '12345678@Abc'
+[2022-04-07 20:33:22,015] Login: Step_04: Click to Login Button
+[2022-04-07 20:33:23,179] Login: Step_05: Verify My Account Link Displayed
+[2022-04-07 20:33:23,279] Login: Step_06: Click to My Account Link
+[2022-04-07 20:33:24,342] Login: Step_07: Verify Customer Info Displayed
+[2022-04-07 20:33:24,446] OS name = windows 10
+[2022-04-07 20:33:24,446] Driver instance name = firefoxdriver: firefox on windows (6932c605-571a-45c1-9311-2b8ad07b481d)

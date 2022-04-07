@@ -6,11 +6,11 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import commons.BaseTest;
+import commons.BaseTest_Nopcommerce;
 import pageObjects.jquery.uploadfile.HomePageObject;
 import pageObjects.jquery.uploadfile.PageGeneratorManager;
 
-public class Level_11_Upload_File extends BaseTest {
+public class Level_11_Upload_File extends BaseTest_Nopcommerce {
 	HomePageObject homePage;
 	String hueName = "Hue.jpg";
 	String dalatName = "Dalat.jpg";

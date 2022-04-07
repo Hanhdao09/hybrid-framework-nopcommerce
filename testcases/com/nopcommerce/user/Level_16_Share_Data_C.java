@@ -8,12 +8,12 @@ import org.testng.annotations.Test;
 
 import com.nopcommerce.common.Common_01_Register_Cookies;
 
-import commons.BaseTest;
+import commons.BaseTest_Nopcommerce;
 import commons.PageGeneratorManager;
 import pageObjects.nopcommerce.user.UserHomePageObject;
 import pageObjects.nopcommerce.user.UserLoginPageObject;
 
-public class Level_16_Share_Data_C extends BaseTest {
+public class Level_16_Share_Data_C extends BaseTest_Nopcommerce {
 	@Parameters("browser")
 	@BeforeClass
 	public void beforeClass(String browserName) {

@@ -14,7 +14,7 @@ import org.testng.ITestListener;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 
-import commons.BaseTest;
+import commons.BaseTest_Nopcommerce;
 import commons.GlobalConstants;
 
 public class ReportNGListener implements ITestListener {
@@ -37,7 +37,7 @@ public class ReportNGListener implements ITestListener {
 
 		// Lấy ra driver từ BaseTest
 		Object testClass = result.getInstance();
-		WebDriver webDriver = ((BaseTest) testClass).getDriverInstance();
+		WebDriver webDriver = ((BaseTest_Nopcommerce) testClass).getDriverInstance();
 
 		String screenshotPath = captureScreenshot(webDriver, result.getName());
 		Reporter.getCurrentTestResult();

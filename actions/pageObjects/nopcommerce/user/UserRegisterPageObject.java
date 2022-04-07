@@ -92,4 +92,9 @@ public class UserRegisterPageObject extends BasePage {
 		return getElementText(driver, UserRegisterPageUI.CONFIRM_PASSWORD_ERROR_MESSAGE);
 	}
 
+	public void inputToTextboxByID(String string) {
+		// TODO Auto-generated method stub
+
+	}
+
 }

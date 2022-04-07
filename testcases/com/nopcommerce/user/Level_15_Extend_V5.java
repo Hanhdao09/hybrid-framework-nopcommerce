@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
 
-import commons.BaseTest;
+import commons.BaseTest_Nopcommerce;
 import commons.PageGeneratorManager;
 import pageObjects.nopcommerce.user.UserCustomerInfoPageObject;
 import pageObjects.nopcommerce.user.UserHomePageObject;
@@ -21,7 +21,7 @@ import pageObjects.nopcommerce.user.UserLoginPageObject;
 import pageObjects.nopcommerce.user.UserRegisterPageObject;
 import reportConfigs.ExtentTestManager;
 
-public class Level_15_Extend_V5 extends BaseTest {
+public class Level_15_Extend_V5 extends BaseTest_Nopcommerce {
 	private WebDriver driver;
 	private UserHomePageObject homePage;
 	private UserRegisterPageObject registerPage;
@@ -44,7 +44,7 @@ public class Level_15_Extend_V5 extends BaseTest {
 //	@Test
 	public void User_01_Register(Method method) {
 		ExtentTestManager.startTest(method.getName(), "User_01_Register");
-		ExtentTestManager.getTest().log(Status.INFO, "");
+		ExtentTestManager.getTest().log(Status.INFO, "Click to RegisterLink");
 		registerPage = homePage.clickToRegisterLink();
 
 		ExtentTestManager.getTest().log(Status.INFO,

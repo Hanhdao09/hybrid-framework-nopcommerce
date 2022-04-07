@@ -7,7 +7,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import commons.BaseTest;
+import commons.BaseTest_Nopcommerce;
 import commons.GlobalConstants;
 import commons.PageGeneratorManager;
 import pageObject.nopcommerce.admin.AdminDashboardPageObject;
@@ -16,7 +16,7 @@ import pageObjects.nopcommerce.user.UserCustomerInfoPageObject;
 import pageObjects.nopcommerce.user.UserHomePageObject;
 import pageObjects.nopcommerce.user.UserLoginPageObject;
 
-public class Level_08_Switch_Roles extends BaseTest {
+public class Level_08_Switch_Roles extends BaseTest_Nopcommerce {
 	private WebDriver driver;
 	private UserHomePageObject userHomePage;
 	private UserLoginPageObject userLoginPage;
